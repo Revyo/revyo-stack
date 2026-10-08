@@ -4,12 +4,12 @@ Agent skills for creating Revyo Software projects. The entry point coordinates f
 
 ## Install into a new project
 
-Install from GitHub:
+After this package is published under the configured npm scope:
 
 ```sh
 mkdir my-project
 cd my-project
-bun add --dev --trust github:Revyo/revyo-stack
+bun add --dev --trust @revyo/stack
 ```
 
 The installer copies the skills into `.agents/skills/`, adds a small routing block to `AGENTS.md`, and records file hashes in `.agents/revyo-stack.json`. Commit all three with your project. Bun creates the initial `package.json` and lockfile; the agent then builds the app in the same repository.
@@ -19,7 +19,7 @@ The installer copies the skills into `.agents/skills/`, adds a small routing blo
 For an explicit installation, or after installing with lifecycle scripts disabled:
 
 ```sh
-bun add --dev github:Revyo/revyo-stack
+bun add --dev @revyo/stack
 bunx --no-install revyo-stack install
 ```
 
@@ -88,7 +88,7 @@ Run `bun run quality:crap` to generate fresh coverage and check it. Projects reu
 
 The Revyo maximum is **CRAP ≤ 8 for every function**. The skill supplies the configuration and Vitest wiring. The gate fails for missing source coverage, unmatched functions, malformed reports, or any function above the configured score (default 8; stricter values are allowed). Scores use per-function executable line coverage, not file averages or function call counts. Native projects use platform test tools and need a language-specific complexity/coverage adapter; this CLI analyzes JavaScript and TypeScript only.
 
-This repository follows the same rule. `bun run quality:crap` runs its Bun tests and CLI smoke checks against an isolated Istanbul-instrumented copy, enforces 90% lines/statements/functions and 80% branches, then scores every function in the installer, analyzer, and repository scripts with a maximum of 8. Source files stay untouched. `bun run check` includes this gate, so it also runs in CI. Reports are written to `coverage/` and `reports/crap.json`.
+This repository follows the same rule. `bun run quality:crap` runs its Bun tests and CLI smoke checks against an isolated Istanbul-instrumented copy, enforces 90% lines/statements/functions and 80% branches, then scores every function in the installer, analyzer, and repository scripts with a maximum of 8. Source and published files stay untouched. `bun run check` includes this gate, so it also runs in CI and before publication. Reports are written to `coverage/` and `reports/crap.json`.
 
 ## Updates
 
@@ -99,7 +99,7 @@ bunx --no-install revyo-stack install
 
 Reinstallation is idempotent. Unedited package-owned files update; locally edited skills are preserved and cause installation to stop before any writes. Existing `AGENTS.md` text outside the marked Revyo block and unrelated skills are preserved. Put project-specific guidance outside the managed block, then use `--force` only when you intend to replace edited Revyo files. Files removed from a later package release are retained for manual review.
 
-## Develop this repository
+## Develop and publish this repository
 
 ```sh
 bun install
@@ -107,9 +107,9 @@ bun run check
 bun pm pack
 ```
 
-Source is maintained at [Revyo/revyo-stack](https://github.com/Revyo/revyo-stack).
+Source is maintained at [Revyo/revyo-stack](https://github.com/Revyo/revyo-stack). Before publishing the npm package, set the desired version and registry. Publish from an authorized session with `bun publish --access public`.
 
-To install a locally packed build in an empty directory, use the absolute path to the tarball from `bun pm pack`:
+To test the unpublished package in an empty directory, use the absolute path to the tarball from `bun pm pack`:
 
 ```sh
 bun add --dev --trust /absolute/path/to/revyo-stack-0.1.0.tgz
