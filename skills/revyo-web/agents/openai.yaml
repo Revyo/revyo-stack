@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revyo Web"
+  short_description: "Build web apps with the latest Next.js"
+  default_prompt: "Use $revyo-web to build this Next.js application."

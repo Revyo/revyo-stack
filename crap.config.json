@@ -1,0 +1,12 @@
+{
+  "include": [
+    "bin/**/*.mjs",
+    "lib/**/*.mjs",
+    "scripts/**/*.mjs",
+    "skills/*/scripts/**/*.mjs"
+  ],
+  "exclude": [],
+  "coverage": ["coverage/coverage-final.json"],
+  "maxScore": 8,
+  "output": "reports/crap.json"
+}

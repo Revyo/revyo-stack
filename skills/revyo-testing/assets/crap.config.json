@@ -1,0 +1,18 @@
+{
+  "include": [
+    "packages/*/src/**/*.{ts,tsx,js,jsx,mts,cts,mjs,cjs}",
+    "apps/*/{src,app,lib,components,api}/**/*.{ts,tsx,js,jsx,mts,cts,mjs,cjs}"
+  ],
+  "exclude": [
+    "**/*.{test,spec}.{ts,tsx,js,jsx,mts,cts,mjs,cjs}",
+    "**/*.d.{ts,mts,cts}",
+    "**/{__tests__,__fixtures__,generated}/**",
+    "**/src/test.{ts,js}"
+  ],
+  "coverage": [
+    "packages/*/coverage/coverage-final.json",
+    "apps/*/coverage/coverage-final.json"
+  ],
+  "maxScore": 8,
+  "output": "reports/crap.json"
+}

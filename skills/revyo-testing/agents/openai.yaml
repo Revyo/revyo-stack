@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revyo Testing"
+  short_description: "Implement behavioral tests and a CRAP gate"
+  default_prompt: "Use $revyo-testing to wire up tests, coverage, and the CRAP gate."

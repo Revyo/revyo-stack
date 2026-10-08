@@ -1,0 +1,6 @@
+bun.lock
+dist/
+reports/
+coverage/
+# Retain the exact source positions used by the real coverage fixture.
+tests/fixtures/vitest-v8/

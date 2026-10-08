@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revyo Auth"
+  short_description: "Implement Better Auth and authorization"
+  default_prompt: "Use $revyo-auth to implement authentication for this project."

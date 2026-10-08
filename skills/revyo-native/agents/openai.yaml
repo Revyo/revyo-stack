@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revyo Native"
+  short_description: "Build native mobile and desktop apps"
+  default_prompt: "Use $revyo-native to set up the requested native apps."

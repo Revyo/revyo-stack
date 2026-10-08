@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revyo Vercel"
+  short_description: "Prepare web and API deployments on Vercel"
+  default_prompt: "Use $revyo-vercel to prepare this deployment."

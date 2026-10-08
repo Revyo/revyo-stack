@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revyo Project"
+  short_description: "Set up a project with the Revyo stack"
+  default_prompt: "Use $revyo-project to set up this Revyo Software project."

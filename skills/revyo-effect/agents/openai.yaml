@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revyo Effect"
+  short_description: "Build backend services with Effect v4"
+  default_prompt: "Use $revyo-effect to implement this backend use case."

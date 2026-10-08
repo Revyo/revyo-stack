@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revyo Monorepo"
+  short_description: "Build a Bun and Turborepo workspace"
+  default_prompt: "Use $revyo-monorepo to configure this workspace."
