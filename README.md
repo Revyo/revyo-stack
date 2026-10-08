@@ -2,9 +2,9 @@
 
 Agent skills for creating Revyo Software projects. The entry point coordinates focused skills for Bun and Turborepo, Next.js, native apps, Better Auth, PostgreSQL on Neon or PlanetScale Postgres, Effect v4, Vercel, and testing with a per-function CRAP gate.
 
-## Install into a new project
+## Install from npm
 
-After this package is published under the configured npm scope:
+Revyo Software maintains the npm package `@revyo/stack`. The repository and package are MIT licensed and available for anyone to use. Once the package is published, install it into a new project with Bun:
 
 ```sh
 mkdir my-project
