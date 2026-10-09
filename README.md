@@ -4,7 +4,7 @@ Agent skills for creating Revyo Software projects. The entry point coordinates f
 
 ## Install from npm
 
-Revyo Software maintains the npm package `@revyo/stack`. The repository and package are MIT licensed and available for anyone to use. Once the package is published, install it into a new project with Bun:
+Revyo Software maintains the npm package `@revyo/stack`. The repository and package are MIT licensed and available for anyone to use. Install it into a new project with Bun:
 
 ```sh
 mkdir my-project
@@ -109,7 +109,7 @@ bun pm pack
 
 Source is maintained at [Revyo/revyo-stack](https://github.com/Revyo/revyo-stack). Before publishing the npm package, set the desired version and registry. Publish from an authorized session with `bun publish --access public`.
 
-To test the unpublished package in an empty directory, use the absolute path to the tarball from `bun pm pack`:
+To test a packed build in an empty directory, use the absolute path to the tarball from `bun pm pack`:
 
 ```sh
 bun add --dev --trust /absolute/path/to/revyo-stack-0.1.0.tgz
