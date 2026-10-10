@@ -4,15 +4,13 @@ Agent skills for creating Revyo Software projects. The entry point coordinates f
 
 ## Install the skills
 
-Revyo Software maintains these skills and the `@revyo/stack` npm package. The repository and package are MIT licensed and available for anyone to use. Install the skills from the public repository with the [open agent skills CLI](https://github.com/vercel-labs/skills):
+Revyo Software maintains these skills and the `@revyo/stack` npm package. The repository and package are MIT licensed and available for anyone to use. From inside your repository, install the skills with the [open agent skills CLI](https://github.com/vercel-labs/skills):
 
 ```sh
-mkdir my-project
-cd my-project
-bunx --bun skills@latest add Revyo/revyo-stack --skill '*'
+bunx skills@latest add Revyo/revyo-stack
 ```
 
-Install all nine skills so the entry point's sibling references work. Choose the agents you use when prompted. `--bun` runs the CLI with Bun. Commit the installed skills and installation metadata with your project, then tell the agent what to build. The CRAP tester runs directly from our npm package as shown below.
+When prompted, select all nine skills so the entry point's sibling references work, then choose the agents you use. Commit the installed skills and installation metadata with your project, then tell the agent what to build. The CRAP tester runs directly from our npm package as shown below.
 
 ### Install from npm
 
@@ -114,7 +112,7 @@ This repository follows the same rule. `bun run quality:crap` runs its Bun tests
 For skills installed with the `skills` CLI:
 
 ```sh
-bunx --bun skills@latest update
+bunx skills@latest update
 ```
 
 To refresh skills installed with the one-command npm installer, rerun `bunx @revyo/stack@latest install`. Once the project has a root `@revyo/stack` dependency, update the dependency and use its matching installer:
@@ -142,7 +140,7 @@ To test a packed build in an empty directory, use the absolute path to the tarba
 bun add --dev --trust /absolute/path/to/revyo-stack-0.1.0.tgz
 ```
 
-Requires Bun 1.3.12+ and Node 20+ for the installer. The installer uses Node's standard library; the CRAP CLI runs with Bun and uses the package's TypeScript parser dependency.
+Requires Bun 1.3.12+. The skills CLI requires Node 22.20+; Revyo's npm installer supports Node 20+. The npm installer uses Node's standard library; the CRAP CLI runs with Bun and uses the package's TypeScript parser dependency.
 
 ## License
 
