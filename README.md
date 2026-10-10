@@ -89,12 +89,12 @@ bunx --package @revyo/stack@latest revyo-crap --config crap.config.json
 
 No prior `bun add`, `--trust`, or `--no-install` is needed. `--package` selects our npm package, and `revyo-crap` selects its testing executable.
 
-For the root quality script and CI, pin the selected npm release instead of using `latest`. This example uses `0.1.0`:
+For the root quality script and CI, pin the selected npm release instead of using `latest`. This example uses `0.1.1`:
 
 ```json
 {
   "scripts": {
-    "quality:crap": "bun run test:coverage && bunx --package @revyo/stack@0.1.0 revyo-crap --config crap.config.json"
+    "quality:crap": "bun run test:coverage && bunx --package @revyo/stack@0.1.1 revyo-crap --config crap.config.json"
   }
 }
 ```
@@ -137,7 +137,7 @@ Source is maintained at [Revyo/revyo-stack](https://github.com/Revyo/revyo-stack
 To test a packed build in an empty directory, use the absolute path to the tarball from `bun pm pack`:
 
 ```sh
-bun add --dev --trust /absolute/path/to/revyo-stack-0.1.0.tgz
+bun add --dev --trust /absolute/path/to/revyo-stack-0.1.1.tgz
 ```
 
 Requires Bun 1.3.12+. The skills CLI requires Node 22.20+; Revyo's npm installer supports Node 20+. The npm installer uses Node's standard library; the CRAP CLI runs with Bun and uses the package's TypeScript parser dependency.

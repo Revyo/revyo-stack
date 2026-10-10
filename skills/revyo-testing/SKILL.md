@@ -20,7 +20,7 @@ Keep fast tests independent of live cloud credentials. Configure integration tes
 
 Use Vitest for the default TS coverage pipeline, installed with the matching coverage provider version. Bun manages dependencies and launches commands; Vitest's V8 provider runs under Node/V8, so do not force that command onto Bun's JavaScriptCore runtime. If using another runner, produce the same complete, source-mapped Istanbul JSON data and validate compatibility.
 
-Run the packaged `revyo-crap` executable with `bunx --package @revyo/stack@VERSION revyo-crap`. Resolve the current npm release during setup and pin its exact version in the root quality script and CI; `0.1.0` below is a working example. Use `@latest` for an interactive diagnostic run. This CLI-only route needs no project dependency or trusted postinstall script. The package supplies the analyzer, scoring logic, reporting, and TypeScript parser dependency; projects supply coverage and `crap.config.json`. A root development dependency with a local `revyo-crap` bin remains supported. Do not copy the script out of the installed skills or create another CRAP implementation in the project. Read [references/crap.md](references/crap.md) for the measurement contract and failure semantics.
+Run the packaged `revyo-crap` executable with `bunx --package @revyo/stack@VERSION revyo-crap`. Resolve the current npm release during setup and pin its exact version in the root quality script and CI; `0.1.1` below is a working example. Use `@latest` for an interactive diagnostic run. This CLI-only route needs no project dependency or trusted postinstall script. The package supplies the analyzer, scoring logic, reporting, and TypeScript parser dependency; projects supply coverage and `crap.config.json`. A root development dependency with a local `revyo-crap` bin remains supported. Do not copy the script out of the installed skills or create another CRAP implementation in the project. Read [references/crap.md](references/crap.md) for the measurement contract and failure semantics.
 
 1. Adapt [assets/vitest.config.ts](assets/vitest.config.ts) in each workspace with tested TS code. Set explicit coverage `include` globs for **all** executable source, including never-imported files. Match source exclusions in both the coverage configuration and CRAP configuration. Split Node/DOM/browser tests using the installed Vitest version's supported configuration. Export `coverage-final.json`, HTML, and a text summary.
 2. Adapt [assets/crap.config.json](assets/crap.config.json) at repo root. Include each app/package's actual source directories, add or remove scopes deliberately, and document justified exclusions for generated/declaration/test-only code. Do not exclude auth, routes, migrations, or complex functions to pass the gate.
@@ -33,7 +33,7 @@ Use this root script after wiring the project's coverage command:
 ```json
 {
   "scripts": {
-    "quality:crap": "bun run test:coverage && bunx --package @revyo/stack@0.1.0 revyo-crap --config crap.config.json"
+    "quality:crap": "bun run test:coverage && bunx --package @revyo/stack@0.1.1 revyo-crap --config crap.config.json"
   }
 }
 ```

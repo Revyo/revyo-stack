@@ -7,7 +7,7 @@ bun run test:coverage
 bunx --package @revyo/stack@latest revyo-crap --config crap.config.json
 ```
 
-For root quality scripts and CI, resolve a published release during setup and replace `@latest` with its exact version, such as `@0.1.0`. A project can instead keep `@revyo/stack` in root dev dependencies and run the local `revyo-crap` bin.
+For root quality scripts and CI, resolve a published release during setup and replace `@latest` with its exact version, such as `@0.1.1`. A project can instead keep `@revyo/stack` in root dev dependencies and run the local `revyo-crap` bin.
 
 For Bun-based measurement adapters and tooling, install `@revyo/stack` as a root development dependency to import the same implementation at `@revyo/stack/crap`:
 

@@ -1,6 +1,6 @@
 {
   "name": "@revyo/stack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Installable agent skills for building Revyo Software projects",
   "type": "module",
   "license": "MIT",
