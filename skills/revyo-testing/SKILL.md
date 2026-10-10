@@ -20,12 +20,12 @@ Keep fast tests independent of live cloud credentials. Configure integration tes
 
 Use Vitest for the default TS coverage pipeline, installed with the matching coverage provider version. Bun manages dependencies and launches commands; Vitest's V8 provider runs under Node/V8, so do not force that command onto Bun's JavaScriptCore runtime. If using another runner, produce the same complete, source-mapped Istanbul JSON data and validate compatibility.
 
-Keep `@revyo/stack` in root dev dependencies and use its packaged `revyo-crap` executable. The package supplies the analyzer, scoring logic, reporting, and TypeScript parser dependency; projects supply coverage and `crap.config.json`. Do not copy the script out of the installed skills or create another CRAP implementation in the project. Read [references/crap.md](references/crap.md) for the measurement contract and failure semantics.
+Run the packaged `revyo-crap` executable with `bunx --package @revyo/stack@VERSION revyo-crap`. Resolve the current npm release during setup and pin its exact version in the root quality script and CI; `0.1.0` below is a working example. Use `@latest` for an interactive diagnostic run. This CLI-only route needs no project dependency or trusted postinstall script. The package supplies the analyzer, scoring logic, reporting, and TypeScript parser dependency; projects supply coverage and `crap.config.json`. A root development dependency with a local `revyo-crap` bin remains supported. Do not copy the script out of the installed skills or create another CRAP implementation in the project. Read [references/crap.md](references/crap.md) for the measurement contract and failure semantics.
 
 1. Adapt [assets/vitest.config.ts](assets/vitest.config.ts) in each workspace with tested TS code. Set explicit coverage `include` globs for **all** executable source, including never-imported files. Match source exclusions in both the coverage configuration and CRAP configuration. Split Node/DOM/browser tests using the installed Vitest version's supported configuration. Export `coverage-final.json`, HTML, and a text summary.
 2. Adapt [assets/crap.config.json](assets/crap.config.json) at repo root. Include each app/package's actual source directories, add or remove scopes deliberately, and document justified exclusions for generated/declaration/test-only code. Do not exclude auth, routes, migrations, or complex functions to pass the gate.
 3. Each applicable workspace exposes `test: "vitest run"` and `test:coverage: "vitest run --coverage"`. Route those tasks through Turbo. Ensure `test:coverage` writes workspace-local `coverage/coverage-final.json` and is not skipped merely because a source package has no tests. A no-test package with runtime code needs a deliberate test plan, not `passWithNoTests` to create a green build.
-4. Root `quality:crap` runs `bun run test:coverage && revyo-crap --config crap.config.json`. Do not score stale artifacts after a failing coverage run. For cross-machine caches, coverage paths must still map to the current source checkout; use fresh coverage when the report cannot be restored portably.
+4. Root `quality:crap` runs fresh coverage followed by the packaged CLI with the pinned npm release, as shown below. Do not score stale artifacts after a failing coverage run. For cross-machine caches, coverage paths must still map to the current source checkout; use fresh coverage when the report cannot be restored portably.
 5. Run the gate and inspect the worst functions and uncovered lines. Refactor real branching or add assertions for missing behavior. Keep report output under `reports/` and coverage artifacts out of source control, but upload them as CI artifacts.
 
 Use this root script after wiring the project's coverage command:
@@ -33,12 +33,12 @@ Use this root script after wiring the project's coverage command:
 ```json
 {
   "scripts": {
-    "quality:crap": "bun run test:coverage && revyo-crap --config crap.config.json"
+    "quality:crap": "bun run test:coverage && bunx --package @revyo/stack@0.1.0 revyo-crap --config crap.config.json"
   }
 }
 ```
 
-Run it with `bun run quality:crap`. For a direct diagnostic run after fresh coverage, use `bunx --no-install revyo-crap --config crap.config.json`.
+Run it with `bun run quality:crap`. For a direct diagnostic run after fresh coverage, use `bunx --package @revyo/stack@latest revyo-crap --config crap.config.json`.
 
 The Revyo gate is **CRAP ≤ 8 for every measured function**, including nested callbacks/generators and class methods. Apply this rule to generated projects and to any repository that implements or uses these tools, including this skills package. A project can choose a stricter limit; do not raise the limit above 8 or grandfather violations to pass CI. Suggested initial aggregate thresholds are 90% lines/statements/functions and 80% branches; apply stronger assertions/coverage to security and irreversible state changes.
 
@@ -55,7 +55,7 @@ Examples: CC 4 with no coverage scores 20; CC 4 with 50% coverage scores 6; full
 
 The bundled CLI measures JS/TS only. Do not feed Swift/Kotlin/C# files into it, or use backend coverage as evidence for native code.
 
-For each requested language, choose a supported per-function cyclomatic-complexity analyzer and source-mapped coverage exporter from the actual toolchain. Join by source path plus function range and exclude nested functions from parents. A Bun measurement adapter can import `crapScore` from `@revyo/stack/crap` to reuse the package's formula; do not reimplement scoring in each repo. Enforce the same maximum of 8 and test covered/uncovered, overloaded, and unmatched functions. Use native line/region reports (for example LLVM/Xcode, JaCoCo/Kover, or .NET coverage) after checking version-specific export support. Report incompatible or absent measurement as a failure/blocker, never as 100% coverage.
+For each requested language, choose a supported per-function cyclomatic-complexity analyzer and source-mapped coverage exporter from the actual toolchain. Join by source path plus function range and exclude nested functions from parents. A Bun measurement adapter can import `crapScore` from `@revyo/stack/crap` to reuse the package's formula; install `@revyo/stack` as a root development dependency when importing this API. Do not reimplement scoring in each repo. Enforce the same maximum of 8 and test covered/uncovered, overloaded, and unmatched functions. Use native line/region reports (for example LLVM/Xcode, JaCoCo/Kover, or .NET coverage) after checking version-specific export support. Report incompatible or absent measurement as a failure/blocker, never as 100% coverage.
 
 Keep a language-specific report with path, function/range, complexity, covered/total lines, score, and provenance. Run it in the target's Turbo wrapper and CI job. If a suitable analyzer is unavailable, complete behavior tests and native builds, then report the missing gate precisely; do not claim the full quality requirement passed.
 

@@ -5,7 +5,7 @@ description: Create or extend a Revyo Bun and Turborepo workspace with appropria
 
 # Bun and Turborepo
 
-Use Bun for dependency management and workspace commands. Keep a single root `bun.lock`, a private root package, `workspaces: ["apps/*", "packages/*"]`, a pinned `packageManager`, and the same Bun version in CI. Merge the package manifest created by installing `@revyo/stack`; keep that dependency in root `devDependencies`.
+Use Bun for dependency management and workspace commands. Keep a single root `bun.lock`, a private root package, `workspaces: ["apps/*", "packages/*"]`, a pinned `packageManager`, and the same Bun version in CI. Merge an existing root manifest or create one if the skills were installed without it. Preserve any existing `@revyo/stack` dependency in root `devDependencies`. CLI-only CRAP use can run directly from npm; add the dependency when importing its shared API or choosing a local executable.
 
 ## Workspace shape
 
@@ -32,7 +32,7 @@ Expose only supported entry points through package `exports`. Source-exported TS
 
 ## Task contract
 
-Root scripts delegate `dev`, `build`, `lint`, `check-types`, `test`, and `test:coverage` to `turbo run <task>`. Add `format` and `format:check`, and a root `quality:crap` script that runs coverage before the installed `revyo-crap` CLI and enforces CRAP ≤ 8 for every function. The [testing skill](../revyo-testing/SKILL.md) owns its config and CI wiring.
+Root scripts delegate `dev`, `build`, `lint`, `check-types`, `test`, and `test:coverage` to `turbo run <task>`. Add `format` and `format:check`, and a root `quality:crap` script that runs coverage before the packaged `revyo-crap` CLI and enforces CRAP ≤ 8 for every function. Pin the npm release when running it through `bunx`; a local dependency and executable are also supported. The [testing skill](../revyo-testing/SKILL.md) owns its config and CI wiring.
 
 Every package with applicable source exposes the tasks that actually verify it. A root green check is insufficient if a package has no script and Turbo silently omits it. Native wrappers expose platform build/test/lint commands; omit TS type checks when no TS exists and verify native compilation through `build`.
 

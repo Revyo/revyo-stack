@@ -1,12 +1,15 @@
 # CRAP measurement contract
 
-`@revyo/stack` ships the `revyo-crap` executable and its TypeScript **JavaScript parser API** dependency. Keep the package in root dev dependencies and run its bin with Bun. Projects configure coverage and source globs; the tested analyzer, formula, report, and gate remain maintained in this package. The [script beside this reference](../scripts/crap.mjs) documents the implementation; do not copy it into a new project or run the installed skill copy as a separate implementation.
+`@revyo/stack` ships the `revyo-crap` executable and its TypeScript **JavaScript parser API** dependency. Run it directly from npm with Bun; CLI-only use needs no project dependency or trusted postinstall script. Projects configure coverage and source globs; the tested analyzer, formula, report, and gate remain maintained in this package. The [script beside this reference](../scripts/crap.mjs) documents the implementation; do not copy it into a new project or run the installed skill copy as a separate implementation.
 
 ```sh
-bunx --no-install revyo-crap --config crap.config.json
+bun run test:coverage
+bunx --package @revyo/stack@latest revyo-crap --config crap.config.json
 ```
 
-For Bun-based measurement adapters and tooling, the package also exports the same implementation at `@revyo/stack/crap`:
+For root quality scripts and CI, resolve a published release during setup and replace `@latest` with its exact version, such as `@0.1.0`. A project can instead keep `@revyo/stack` in root dev dependencies and run the local `revyo-crap` bin.
+
+For Bun-based measurement adapters and tooling, install `@revyo/stack` as a root development dependency to import the same implementation at `@revyo/stack/crap`:
 
 ```js
 import { crapScore } from "@revyo/stack/crap";

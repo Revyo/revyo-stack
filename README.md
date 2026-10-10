@@ -2,34 +2,48 @@
 
 Agent skills for creating Revyo Software projects. The entry point coordinates focused skills for Bun and Turborepo, Next.js, native apps, Better Auth, PostgreSQL on Neon or PlanetScale Postgres, Effect v4, Vercel, and testing with a per-function CRAP gate.
 
-## Install from npm
+## Install the skills
 
-Revyo Software maintains the npm package `@revyo/stack`. The repository and package are MIT licensed and available for anyone to use. Install it into a new project with Bun:
+Revyo Software maintains these skills and the `@revyo/stack` npm package. The repository and package are MIT licensed and available for anyone to use. Install the skills from the public repository with the [open agent skills CLI](https://github.com/vercel-labs/skills):
 
 ```sh
 mkdir my-project
 cd my-project
-bun add --dev --trust @revyo/stack
+bunx --bun skills@latest add Revyo/revyo-stack --skill '*'
 ```
 
-The installer copies the skills into `.agents/skills/`, adds a small routing block to `AGENTS.md`, and records file hashes in `.agents/revyo-stack.json`. Commit all three with your project. Bun creates the initial `package.json` and lockfile; the agent then builds the app in the same repository.
+Install all nine skills so the entry point's sibling references work. Choose the agents you use when prompted. `--bun` runs the CLI with Bun. Commit the installed skills and installation metadata with your project, then tell the agent what to build. The CRAP tester runs directly from our npm package as shown below.
 
-`--trust` lets Bun run this package's postinstall script. Without it, the package installs but Bun blocks the file-copy step. See [Bun's trusted dependency documentation](https://bun.sh/docs/pm/cli/add).
+### Install from npm
 
-For an explicit installation, or after installing with lifecycle scripts disabled:
+You can also use Revyo Software's npm installer directly:
+
+```sh
+bunx @revyo/stack@latest install
+```
+
+The installer copies the skills into `.agents/skills/`, adds a small routing block to `AGENTS.md`, and records file hashes in `.agents/revyo-stack.json`. Commit all three with your project. The agent then builds the app in the same repository. The CRAP tester also runs directly from npm, without a separate dependency installation.
+
+This runs the installer explicitly, so no `--dev`, `--trust`, or `--no-install` flags are needed for the one-command setup. `bunx` downloads the npm package as needed; it does not add a dependency to your project's manifest.
+
+For Claude Code, also copy the skills into its discovery directory:
+
+```sh
+bunx @revyo/stack@latest install --claude
+```
+
+Both copies use the same sibling links. Subsequent installs update both if the Claude copy was previously installed. Restart the agent session if newly installed skills do not appear in its catalog. Any agent can read the entry point directly.
+
+### Install as a project dependency
+
+To install the npm dependency first and run its local installer:
 
 ```sh
 bun add --dev @revyo/stack
 bunx --no-install revyo-stack install
 ```
 
-For Claude Code, also copy the skills into its discovery directory:
-
-```sh
-bunx --no-install revyo-stack install --claude
-```
-
-Both copies use the same sibling links. Subsequent installs update both if the Claude copy was previously installed. Restart the agent session if newly installed skills do not appear in its catalog. Any agent can read the entry point directly.
+`--no-install` prevents `bunx` from downloading a missing executable's package; this command uses the project's installed bin. You can also use `bun add --dev --trust @revyo/stack` to let Bun run the installer's postinstall script automatically. See [Bun's trusted dependency documentation](https://bun.sh/docs/pm/cli/add).
 
 ## Tell the agent what to build
 
@@ -68,23 +82,28 @@ All Revyo databases use PostgreSQL. Choosing PlanetScale means PlanetScale Postg
 
 ## Testing and CRAP
 
-`@revyo/stack` ships the reusable `revyo-crap` CLI and its parser dependency. It combines TypeScript AST complexity with Istanbul JSON coverage. Generated projects keep this package as a root development dependency, configure coverage and `crap.config.json`, and use:
+`@revyo/stack` ships the reusable `revyo-crap` CLI and its parser dependency. It combines TypeScript AST complexity with Istanbul JSON coverage. Configure your test runner to write `coverage-final.json`, adapt the [CRAP configuration template](skills/revyo-testing/assets/crap.config.json) to your source and coverage paths, and run:
 
 ```sh
-bunx --no-install revyo-crap --config crap.config.json
+bun run test:coverage
+bunx --package @revyo/stack@latest revyo-crap --config crap.config.json
 ```
 
-The testing skill wires the project's root quality script to this packaged executable:
+No prior `bun add`, `--trust`, or `--no-install` is needed. `--package` selects our npm package, and `revyo-crap` selects its testing executable.
+
+For the root quality script and CI, pin the selected npm release instead of using `latest`. This example uses `0.1.0`:
 
 ```json
 {
   "scripts": {
-    "quality:crap": "bun run test:coverage && revyo-crap --config crap.config.json"
+    "quality:crap": "bun run test:coverage && bunx --package @revyo/stack@0.1.0 revyo-crap --config crap.config.json"
   }
 }
 ```
 
-Run `bun run quality:crap` to generate fresh coverage and check it. Projects reuse the package's implementation rather than copying or rewriting CRAP logic. Bun-based native measurement adapters can also import its shared `crapScore` function from `@revyo/stack/crap`; native complexity/coverage extraction still needs platform-specific tooling.
+Run `bun run quality:crap` to generate fresh coverage and check it. Projects reuse the package's implementation rather than copying or rewriting CRAP logic. If you prefer a local dependency, add `@revyo/stack` to root dev dependencies and invoke `revyo-crap` directly in your quality script.
+
+Bun-based native measurement adapters can import the shared `crapScore` function from `@revyo/stack/crap`. Add `@revyo/stack` as a root development dependency when importing that API; native complexity/coverage extraction still needs platform-specific tooling.
 
 The Revyo maximum is **CRAP ≤ 8 for every function**. The skill supplies the configuration and Vitest wiring. The gate fails for missing source coverage, unmatched functions, malformed reports, or any function above the configured score (default 8; stricter values are allowed). Scores use per-function executable line coverage, not file averages or function call counts. Native projects use platform test tools and need a language-specific complexity/coverage adapter; this CLI analyzes JavaScript and TypeScript only.
 
@@ -92,12 +111,20 @@ This repository follows the same rule. `bun run quality:crap` runs its Bun tests
 
 ## Updates
 
+For skills installed with the `skills` CLI:
+
+```sh
+bunx --bun skills@latest update
+```
+
+To refresh skills installed with the one-command npm installer, rerun `bunx @revyo/stack@latest install`. Once the project has a root `@revyo/stack` dependency, update the dependency and use its matching installer:
+
 ```sh
 bun update @revyo/stack
 bunx --no-install revyo-stack install
 ```
 
-Reinstallation is idempotent. Unedited package-owned files update; locally edited skills are preserved and cause installation to stop before any writes. Existing `AGENTS.md` text outside the marked Revyo block and unrelated skills are preserved. Put project-specific guidance outside the managed block, then use `--force` only when you intend to replace edited Revyo files. Files removed from a later package release are retained for manual review.
+Reinstallation with the npm installer is idempotent. Unedited package-owned files update; locally edited skills are preserved and cause installation to stop before any writes. Existing `AGENTS.md` text outside the marked Revyo block and unrelated skills are preserved. Put project-specific guidance outside the managed block, then use `--force` only when you intend to replace edited Revyo files. Files removed from a later package release are retained for manual review.
 
 ## Develop and publish this repository
 
