@@ -119,6 +119,7 @@ const gitFixture = () => {
     { mode: 0o755 },
   );
   return {
+    repo,
     bin,
     env: {
       ...process.env,
@@ -341,20 +342,10 @@ describe("upstream catalog", () => {
   });
   test("the real Git adapter and sync CLI operate only on the disposable fixture", () => {
     const fixture = gitFixture();
-    const oldPath = process.env.PATH;
-    const oldRemote = process.env.REVYO_TEST_REMOTE;
-    try {
-      process.env.PATH = fixture.env.PATH;
-      process.env.REVYO_TEST_REMOTE = fixture.env.REVYO_TEST_REMOTE;
-      const actual = repositorySnapshot(source, temporary());
-      expect(actual.files).toContain("skills/sample/SKILL.md");
-      expect(actual.read("LICENSE").toString()).toContain("MIT");
-      expect(actual.mode("LICENSE")).toBe("100644");
-    } finally {
-      process.env.PATH = oldPath;
-      if (oldRemote === undefined) delete process.env.REVYO_TEST_REMOTE;
-      else process.env.REVYO_TEST_REMOTE = oldRemote;
-    }
+    const actual = repositorySnapshot(source, temporary(), fixture.repo);
+    expect(actual.files).toContain("skills/sample/SKILL.md");
+    expect(actual.read("LICENSE").toString()).toContain("MIT");
+    expect(actual.mode("LICENSE")).toBe("100644");
     const root = setup();
     const result = Bun.spawnSync(
       [

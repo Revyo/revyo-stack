@@ -27,19 +27,16 @@ export function git(cwd, args) {
   }).trimEnd();
 }
 
-export function repositorySnapshot(source, cache) {
+export function repositorySnapshot(
+  source,
+  cache,
+  remote = `https://github.com/${source.repository}.git`,
+) {
   const directory = join(cache, source.id);
   execFileSync(
     "git",
-    [
-      "clone",
-      "--depth",
-      "1",
-      "--filter=blob:none",
-      `https://github.com/${source.repository}.git`,
-      directory,
-    ],
-    { stdio: "ignore" },
+    ["clone", "--depth", "1", "--filter=blob:none", remote, directory],
+    { stdio: ["ignore", "pipe", "pipe"] },
   );
   const revision = git(directory, ["rev-parse", "HEAD"]);
   const files = git(directory, ["ls-tree", "-r", "--name-only", "HEAD"]).split(
