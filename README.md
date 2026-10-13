@@ -105,7 +105,9 @@ Once the needed choices are resolved, an implementation request continues throug
 the requested scope. Explicitly deferring the actual app still delivers the runnable
 brand/marketing phase; it does not make marketing-only the default for other requests.
 The [PageSpeedPlus trial protocol](benchmarks/pagespeedplus/protocol.md) checks both
-scopes with ordinary prompts that do not name skills or request planning.
+scopes with ordinary prompts that do not name skills or request planning. Its
+[observed results](benchmarks/pagespeedplus/results.md) retain first-pass failures,
+assisted corrections, and the limits of the clean kickoff retest.
 
 ```text
 Use $revyo-project to set up this repository for a Revyo Software project.

@@ -22,7 +22,8 @@ approval loop.
 - Better Auth when authentication is needed.
 - PostgreSQL on Neon or PlanetScale Postgres; Drizzle schema/migration tooling.
 - Effect v4 backend services and Vercel web/API hosting.
-- Behavioral tests, reproducible coverage, and per-function CRAP ≤ 8.
+- Behavioral tests, reproducible coverage, and per-function CRAP ≤ 8 for generated
+  source, with runnable quality commands in each phase, including marketing-only.
 
 Missing hosted credentials do not change these architecture defaults: durable
 product data still needs the PostgreSQL live-adapter path. Isolated test services
