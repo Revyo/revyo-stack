@@ -24,6 +24,10 @@ approval loop.
 - Effect v4 backend services and Vercel web/API hosting.
 - Behavioral tests, reproducible coverage, and per-function CRAP ≤ 8.
 
+Missing hosted credentials do not change these architecture defaults: durable
+product data still needs the PostgreSQL live-adapter path. Isolated test services
+establish local behavior, not a replacement production persistence architecture.
+
 Existing project instructions and explicit user requirements take precedence.
 Do not add apps, authentication, infrastructure, or migrations beyond the product’s
 needs. For setup/version/provider decisions, use [setup details](references/setup.md).

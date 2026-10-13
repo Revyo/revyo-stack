@@ -28,3 +28,10 @@ live-adapter path and identifying which behavior remains unverified. Prepare pro
 configuration and environment contracts locally; provisioning, migrations, deployment,
 and release follow the user’s actual scope. Production migrations do not belong in
 install/build hooks.
+
+For durable product data, implement the PostgreSQL schema/migrations and live
+repository even when no hosted credentials are available. File/JSON storage or a
+browser store is not an implicit substitute for that path. Use isolated PostgreSQL
+for adapter verification when available; controlled repositories verify domain
+behavior only. Load the persistence and backend guidance when planning these
+boundaries, before committing to an incompatible scaffold.

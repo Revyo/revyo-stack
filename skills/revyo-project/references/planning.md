@@ -15,6 +15,12 @@ would materially change the product before dependent implementation; continue
 independent research while awaiting answers. Use stated, reversible assumptions
 for incidental details. A sufficiently complete brief needs a plan, not an interview.
 
+When a broad brief points to an existing product, clarify which of its workflows
+should ship now instead of silently selecting a smaller MVP. Research the reference
+before that question; make the proposed scope concrete enough to answer. “Local”
+settles where the result runs, not which product workflows or stack requirements
+can be dropped.
+
 Translate the answers into scope, architecture, and observable acceptance criteria.
 For a request to build a product, include its functional workflows, data, relevant
 authentication, and integrations. Marketing pages alone do not fulfill an app

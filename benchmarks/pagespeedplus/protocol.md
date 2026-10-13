@@ -1,6 +1,6 @@
 # PageSpeedPlus project-start trial
 
-This is an observed agent trial, not a deterministic unit test or proof that every model/client will choose the same skills. Both runs start in separate empty Git repositories with the normal `revyo-stack install` output. The agent receives no benchmark instructions, named skills, grading rubric, or catalog-maintenance history.
+This is an observed agent trial, not a deterministic unit test or proof that every model/client will choose the same skills. Each run starts in a separate empty Git repository with the normal `revyo-stack install` output. The agent receives no benchmark instructions, named skills, grading rubric, or catalog-maintenance history.
 
 ## Product research
 
