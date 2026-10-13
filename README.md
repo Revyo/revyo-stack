@@ -98,6 +98,15 @@ existing catalog and fail the update before publishing a replacement PR. Refresh
 
 ## Tell the agent what to build
 
+New products start with discovery and a plan, including questions about consequential
+choices the brief leaves open. The entry point uses host Plan mode when a control is
+available; otherwise it plans in the current mode without claiming to switch modes.
+Once the needed choices are resolved, an implementation request continues through
+the requested scope. Explicitly deferring the actual app still delivers the runnable
+brand/marketing phase; it does not make marketing-only the default for other requests.
+The [PageSpeedPlus trial protocol](benchmarks/pagespeedplus/protocol.md) checks both
+scopes with ordinary prompts that do not name skills or request planning.
+
 ```text
 Use $revyo-project to set up this repository for a Revyo Software project.
 Build a customer portal with a Next.js web app, Better Auth, and Neon.

@@ -9,6 +9,11 @@ Deliver the requested runnable project in the current repository. A working
 vertical slice establishes that the chosen boundaries integrate; it does not
 limit a broader requested scope. Preserve existing files and installed skills.
 
+Start a new product with [project planning](references/planning.md), even when the
+user did not invoke `/plan`. Resolve consequential product choices before coding;
+do not repeat settled questions or turn a clear implementation request into an
+approval loop.
+
 ## New-project defaults
 
 - Bun/Turborepo workspaces and TypeScript for web/backend.
