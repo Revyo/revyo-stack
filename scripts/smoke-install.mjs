@@ -154,6 +154,29 @@ function verify(root, commandRoot = root) {
     "Matt's namespaced TDD skill was not packed",
   );
   assert.ok(
+    existsSync(join(root, ".agents/skills/seo-audit/UPSTREAM.md")),
+    "SEO skill was not packed",
+  );
+  assert.ok(
+    existsSync(
+      join(root, ".agents/skills/ai-seo/references/agent-readiness.md"),
+    ),
+    "AI SEO references were not packed",
+  );
+  assert.ok(
+    existsSync(join(root, ".agents/skills/is-agentic/SKILL.md")),
+    "HTTP source adapter was not packed",
+  );
+  assert.ok(
+    existsSync(
+      join(
+        root,
+        ".agents/skills/revyo-brand-social/references/verification.md",
+      ),
+    ),
+    "Brand/share verification was not packed",
+  );
+  assert.ok(
     run(commandRoot, ["bunx", "--no-install", "revyo-crap", "--help"]).includes(
       "Usage: revyo-crap",
     ),

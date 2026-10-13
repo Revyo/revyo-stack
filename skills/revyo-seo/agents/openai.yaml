@@ -1,0 +1,6 @@
+interface:
+  display_name: "Revyo SEO"
+  short_description: "Route SEO, AI discovery, and share-preview work"
+  default_prompt: "Use $revyo-seo for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

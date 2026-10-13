@@ -52,15 +52,7 @@ if (new Set(skills.map(({ name }) => name)).size !== skills.length)
 
 for (const file of [
   resolve(root, "README.md"),
-  ...skills
-    .flatMap(({ path }) => walk(path))
-    .filter(
-      (file) =>
-        file.endsWith(".md") &&
-        !file.endsWith("/UPSTREAM.md") &&
-        !file.includes("/revyo-design/") &&
-        !file.includes("/revyo-engineering/"),
-    ),
+  ...walk(resolve(root, "skills")).filter((file) => file.endsWith(".md")),
   ...skills.map(({ path }) => resolve(path, "SKILL.md")),
 ]) {
   const text = readFileSync(file, "utf8");

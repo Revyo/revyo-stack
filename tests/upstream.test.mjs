@@ -36,6 +36,8 @@ import {
 } from "../scripts/upstream/pull-requests.mjs";
 import { resolveSkillLink, skillDirectories } from "../lib/catalog.mjs";
 
+import { fetchHttpSources, httpSnapshot } from "../scripts/upstream/http.mjs";
+
 const roots = [];
 const temporary = () => {
   const path = mkdtempSync(join(tmpdir(), "revyo-upstream-test-"));
@@ -77,7 +79,12 @@ const snapshot = (revision = "aaa", contents = {}) => {
 };
 const setup = (sources = [source]) => {
   const root = temporary();
-  for (const dir of ["skills", "revyo-design", "revyo-engineering"])
+  for (const dir of [
+    "skills",
+    "revyo-design",
+    "revyo-engineering",
+    "revyo-seo",
+  ])
     mkdirSync(join(root, dir));
   writeFileSync(
     join(root, "upstream-sources.json"),
@@ -530,4 +537,143 @@ test("logical sibling links resolve both in the source catalog and after install
       skills,
     ),
   ).toBe(join(root, "revyo-design/sample/references/guide.md"));
+});
+
+describe("official HTTP skill sources", () => {
+  const remote = {
+    id: "web-skill",
+    type: "http",
+    url: "https://example.test/SKILL.md",
+    name: "sample",
+    paths: ["skills/sample"],
+    destination: "revyo-seo",
+    mode: "remote",
+  };
+  test("fetches and tracks the exact official skill without redistributing it", async () => {
+    const root = setup([remote]);
+    writeFileSync(
+      join(root, "upstream-overrides.json"),
+      JSON.stringify({
+        renames: {},
+        descriptions: {
+          sample:
+            "Check a public site's agent readiness when preparing its launch.",
+        },
+        guidance: { sample: "Check the exact report timestamp." },
+      }),
+    );
+    const calls = [];
+    const sources = await fetchHttpSources(
+      [source, remote],
+      async (url, options) => {
+        calls.push(url);
+        expect(options.signal).toBeInstanceOf(AbortSignal);
+        return new Response(markdown());
+      },
+    );
+    expect(calls).toEqual([remote.url]);
+    const current = syncCatalog(root, (item) => sources.get(item.id));
+    expect(current.sample.revision).toMatch(/^[a-f0-9]{64}$/);
+    expect(existsSync(join(root, "revyo-seo/sample/UPSTREAM.md"))).toBe(false);
+    expect(existsSync(join(root, "revyo-seo/sample/LICENSE.upstream"))).toBe(
+      false,
+    );
+    const entry = readFileSync(join(root, "revyo-seo/sample/SKILL.md"), "utf8");
+    expect(entry).toContain(remote.url);
+    expect(entry).toContain("Check the exact report timestamp.");
+    expect(entry).not.toContain("Transitions.dev");
+    expect(
+      readFileSync(join(root, "revyo-seo/sample/SOURCE.md"), "utf8"),
+    ).toContain("Content digest:");
+    expect(
+      Bun.YAML.parse(
+        readFileSync(join(root, "revyo-seo/sample/agents/openai.yaml"), "utf8"),
+      ).policy.allow_implicit_invocation,
+    ).toBe(true);
+    const lock = readFileSync(join(root, "upstream-lock.json"), "utf8");
+    syncCatalog(root, (item) => sources.get(item.id));
+    expect(readFileSync(join(root, "upstream-lock.json"), "utf8")).toBe(lock);
+    const next = httpSnapshot(
+      remote,
+      Buffer.from(markdown("sample", "Updated guidance.")),
+    );
+    syncCatalog(root, () => next);
+    expect(readFileSync(join(root, "upstream-lock.json"), "utf8")).not.toBe(
+      lock,
+    );
+  });
+  test("HTTP errors and invalid markdown fail before a tracked catalog is changed", async () => {
+    await expect(
+      fetchHttpSources(
+        [remote],
+        async () => new Response("Unavailable", { status: 503 }),
+      ),
+    ).rejects.toThrow("HTTP skill web-skill: 503");
+    await expect(
+      fetchHttpSources(
+        [remote],
+        async () => new Response("<html>Challenge</html>"),
+      ),
+    ).rejects.toThrow("Missing upstream");
+    expect(() => httpSnapshot(remote, Buffer.from(markdown("wrong")))).toThrow(
+      "Invalid HTTP skill metadata",
+    );
+    expect(() =>
+      httpSnapshot(
+        remote,
+        Buffer.from("---\nname: sample\ndescription: 12\n---\n"),
+      ),
+    ).toThrow("Invalid HTTP skill metadata");
+  });
+  test("the sync CLI fetches a public HTTP source and creates a discoverable SEO adapter", async () => {
+    const server = Bun.spawn(
+      [
+        process.execPath,
+        "-e",
+        `const server = Bun.serve({hostname: '127.0.0.1', port: 0, fetch: () => new Response(${JSON.stringify(markdown())})}); console.log(server.port);`,
+      ],
+      { stdout: "pipe", stderr: "pipe" },
+    );
+    try {
+      const reader = server.stdout.getReader();
+      const chunk = await reader.read();
+      const port = Number(new TextDecoder().decode(chunk.value).trim());
+      reader.releaseLock();
+      const root = setup([
+        { ...remote, url: `http://127.0.0.1:${port}/SKILL.md` },
+      ]);
+      const result = Bun.spawnSync([
+        process.execPath,
+        resolve(import.meta.dir, "../scripts/sync-upstream.mjs"),
+        root,
+      ]);
+      expect(result.exitCode).toBe(0);
+      expect(result.stdout.toString()).toContain(
+        "Synchronized 1 upstream skills",
+      );
+      expect(skillDirectories(root).map((item) => item.name)).toContain(
+        "sample",
+      );
+      expect(readLock(root).sample.mode).toBe("remote");
+    } finally {
+      server.kill();
+      await server.exited;
+    }
+  });
+  test("SEO-specific vendor guidance is separate from aesthetic recipes", () => {
+    const seo = { ...source, destination: "revyo-seo" };
+    const root = setup([seo]);
+    writeFileSync(
+      join(root, "upstream-overrides.json"),
+      JSON.stringify({
+        renames: {},
+        descriptions: {},
+        guidance: { sample: "Verify ranking claims with primary sources." },
+      }),
+    );
+    syncCatalog(root, () => snapshot());
+    const entry = readFileSync(join(root, "revyo-seo/sample/SKILL.md"), "utf8");
+    expect(entry).toContain("Verify ranking claims with primary sources.");
+    expect(entry).not.toContain("aesthetic recipes");
+  });
 });

@@ -166,6 +166,16 @@
     "triage-issue-reports": "Triage Slack issue reports when a configured Benny workflow is authorized to assess and route them.",
     "variant": "Build alternatives for a UI component when comparing design directions or iterating on a chosen treatment.",
     "wait-what": "Pause to reconcile contradictory evidence when the user challenges the current conclusion or the task’s assumptions stop fitting.",
-    "writing-for-agents": "Write concise instructions and reference documents when another agent is the intended reader."
+    "writing-for-agents": "Write concise instructions and reference documents when another agent is the intended reader.",
+    "seo-audit": "Diagnose technical, indexing, metadata, or on-page SEO issues when auditing existing pages or investigating search regressions.",
+    "programmatic-seo": "Design useful, data-backed SEO pages at scale when building directories, integration pages, location pages, or other template-driven content.",
+    "ai-seo": "Improve content discovery and citation by AI search systems when working on AI visibility, answer extraction, or machine-readable content.",
+    "is-agentic": "Check a public site or MCP endpoint for agent-readiness issues when auditing accessibility to agents, preparing a launch, or verifying readiness fixes."
+  },
+  "guidance": {
+    "seo-audit": "Scope the audit to the requested pages and use current evidence. Check rendered output when raw HTML alone cannot establish a finding. Use available context before asking questions; unavailable analytics do not block technical checks. Treat numeric thresholds and ranking claims as context to verify, not guarantees.",
+    "programmatic-seo": "This is a page-generation workflow, separate from seo-audit. Build only the requested page family with distinct user value and real data. Do not infer permission to mass-publish. Reused layouts are fine; variable-swapped thin pages are not a substitute for useful content. Verify current search guidance before claiming duplicate-content penalties or authority benefits.",
+    "ai-seo": "Separate retrieval, citation, recommendation, and ranking claims. Check dates and primary sources before relying on platform statistics or prescriptive formulas. Google AI features do not require special AI files or markup. Machine-readable alternatives should serve the same useful, accurate content; use is-agentic for technical readiness evidence.",
+    "is-agentic": "Apply findings to the exact URL and timestamp, corroborating stale issues against the current response. A readiness score is neither a search-ranking forecast nor a certification. Public scanning does not authorize submitting private URLs, credentials, or personal data. Fix the issues relevant to the task and do not poll indefinitely for a fresh report."
   }
 }

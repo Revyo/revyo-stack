@@ -1,6 +1,14 @@
 {
   "version": 1,
   "skills": {
+    "ai-seo": {
+      "source": "marketing-seo",
+      "path": "skills/ai-seo",
+      "destination": "revyo-seo/ai-seo",
+      "hash": "6db3ba3f782059b54f17b2b24e64fc60f4377f961a71fcd21876a329225b94d8",
+      "revision": "0f8d89961cdf782dd02644b9df3ddc671c21a7f0",
+      "mode": "vendor"
+    },
     "animate": {
       "source": "emil",
       "path": "skills/animate",
@@ -505,6 +513,14 @@
       "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
       "mode": "vendor"
     },
+    "is-agentic": {
+      "source": "is-agentic",
+      "path": "skills/is-agentic",
+      "destination": "revyo-seo/is-agentic",
+      "hash": "e254fac6a376a26693cc1219681d283f8d52aa57a898301439cd0922ddec6969",
+      "revision": "41cacbc952a0d9b8336773d531abd573e0916092deb1fb6c1e468b03451b997d",
+      "mode": "remote"
+    },
     "ketchup": {
       "source": "poteto",
       "path": "pstack/skills/ketchup",
@@ -817,6 +833,14 @@
       "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
       "mode": "vendor"
     },
+    "programmatic-seo": {
+      "source": "marketing-seo",
+      "path": "skills/programmatic-seo",
+      "destination": "revyo-seo/programmatic-seo",
+      "hash": "45e96c25e0b68bac7f656225ffdf52c6b25f5c57d53ba0834a445c41bfd127ba",
+      "revision": "0f8d89961cdf782dd02644b9df3ddc671c21a7f0",
+      "mode": "vendor"
+    },
     "prototype": {
       "source": "emil",
       "path": "skills/prototype",
@@ -887,6 +911,14 @@
       "destination": "revyo-engineering/scaffold-exercises",
       "hash": "1e850e424528d490626e33d34fbc01fca18f7742682d1a961147c6ebc2c0d7f8",
       "revision": "49dd158d1076134a641b33efb035946536778336",
+      "mode": "vendor"
+    },
+    "seo-audit": {
+      "source": "marketing-seo",
+      "path": "skills/seo-audit",
+      "destination": "revyo-seo/seo-audit",
+      "hash": "e5f9922630cd1bbc879f44076a2165b5cc1e09b9e52a2b397316c25bdc97cec6",
+      "revision": "0f8d89961cdf782dd02644b9df3ddc671c21a7f0",
       "mode": "vendor"
     },
     "setup-benny": {

@@ -1,13 +1,18 @@
 import { mkdtempSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
-import { repositorySnapshot, syncCatalog } from "./upstream/sync.mjs";
+import { readJson, repositorySnapshot, syncCatalog } from "./upstream/sync.mjs";
+import { fetchHttpSources } from "./upstream/http.mjs";
 
 const cache = mkdtempSync(join(tmpdir(), "revyo-upstream-"));
 try {
+  const root = resolve(process.argv[2] ?? resolve(import.meta.dir, ".."));
+  const http = await fetchHttpSources(
+    readJson(root, "upstream-sources.json").sources,
+  );
   const skills = syncCatalog(
-    resolve(process.argv[2] ?? resolve(import.meta.dir, "..")),
-    (source) => repositorySnapshot(source, cache),
+    root,
+    (source) => http.get(source.id) ?? repositorySnapshot(source, cache),
   );
   console.log(`Synchronized ${Object.keys(skills).length} upstream skills.`);
 } finally {

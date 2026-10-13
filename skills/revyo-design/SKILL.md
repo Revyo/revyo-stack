@@ -14,6 +14,7 @@ Use the narrowest relevant skill without waiting for a named invocation:
 - Existing UI improvements: [better-interface](../better-interface/SKILL.md)
   routes accessibility, layout, typography, color, and copy reviews.
 - Reusable components: [building-components](../building-components/SKILL.md).
+- Brand foundations, Open Graph images, and favicons: [revyo-brand-social](../revyo-brand-social/SKILL.md).
 - Motion: [animate](../animate/SKILL.md) to implement,
   [review-animations](../review-animations/SKILL.md) to critique, or
   [animation-performance](../animation-performance/SKILL.md) for jank.

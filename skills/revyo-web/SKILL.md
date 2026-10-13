@@ -22,6 +22,7 @@ does not select function execution, and Edge requires compatible dependencies.
 - Protected reads/writes, caching, or session integration:
   [data boundaries](references/data-boundaries.md).
 - Building or refining UI: [revyo-design](../revyo-design/SKILL.md).
+- Public-page search metadata, indexing, or share previews: [revyo-seo](../revyo-seo/SKILL.md).
 - Deployment configuration: [revyo-vercel](../revyo-vercel/SKILL.md).
 
 Keep loading/error/empty states, form feedback, and accessibility appropriate to

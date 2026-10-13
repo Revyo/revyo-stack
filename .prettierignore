@@ -19,3 +19,10 @@ revyo-engineering/**
 !revyo-engineering/*/SKILL.md
 !revyo-engineering/*/SOURCE.md
 !revyo-engineering/*/agents/openai.yaml
+revyo-seo/**
+!revyo-seo/*/
+!revyo-seo/*/agents/
+!revyo-seo/README.md
+!revyo-seo/*/SKILL.md
+!revyo-seo/*/SOURCE.md
+!revyo-seo/*/agents/openai.yaml

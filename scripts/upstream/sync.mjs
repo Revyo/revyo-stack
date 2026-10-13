@@ -11,12 +11,11 @@ import {
   description,
   digest,
   metadata,
-  remoteDetail,
   renameInvocations,
   rewriteLinks,
   skillName,
-  sourceUrl,
-  vendorDetail,
+  skillDetail,
+  sourceAttribution,
   wrapper,
 } from "./render.mjs";
 
@@ -82,10 +81,11 @@ export function material(source, snapshot, path) {
       mode,
     });
   }
-  result.set("LICENSE.upstream", {
-    data: snapshot.read(source.license),
-    mode: "100644",
-  });
+  if (source.license)
+    result.set("LICENSE.upstream", {
+      data: snapshot.read(source.license),
+      mode: "100644",
+    });
   return result;
 }
 
@@ -155,10 +155,7 @@ export function writeVendor(root, destination, skill, overrides) {
 export function writeSkill(root, source, skill, overrides) {
   const destination = `${source.destination}/${skill.name}`;
   rmSync(join(root, destination), { recursive: true, force: true });
-  const detail =
-    source.mode === "remote"
-      ? remoteDetail(source, skill.revision, skill.context.path)
-      : vendorDetail(skill.name);
+  const detail = skillDetail(source, skill, overrides);
   if (source.mode === "vendor")
     writeVendor(root, destination, skill, overrides);
   writeFile(
@@ -175,11 +172,7 @@ export function writeSkill(root, source, skill, overrides) {
       skill.files.get("agents/openai.yaml")?.data.toString(),
     ),
   );
-  writeFile(
-    root,
-    `${destination}/SOURCE.md`,
-    `# Source\n\nUpstream: [${source.repository}](${sourceUrl(source, skill.revision, skill.context.path)})\n\nRevision: \`${skill.revision}\`\n\nMode: ${source.mode}. Revyo supplies the concise discovery wrapper and automatic invocation policy.\nRelative links and colliding skill invocations are adapted for the installed layout.\nDomain guidance and supporting files belong to their upstream authors.\n\nLicense: [upstream terms](${sourceUrl(source, skill.revision, source.license)}).\n`,
-  );
+  writeFile(root, `${destination}/SOURCE.md`, sourceAttribution(source, skill));
   return {
     source: source.id,
     path: skill.context.path,

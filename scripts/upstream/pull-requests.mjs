@@ -4,6 +4,7 @@ export const marker = "<!-- revyo-upstream-skills -->";
 export const updatePaths = [
   "revyo-design",
   "revyo-engineering",
+  "revyo-seo",
   "upstream-lock.json",
   "upstream-sources.json",
   "upstream-overrides.json",

@@ -34,6 +34,7 @@ needs. For setup/version/provider decisions, use [setup details](references/setu
 - Deployment: [revyo-vercel](../revyo-vercel/SKILL.md).
 - Test/coverage/gate configuration: [revyo-testing](../revyo-testing/SKILL.md).
 - UI: [revyo-design](../revyo-design/SKILL.md).
+- Public-site search, discovery, and share assets: [revyo-seo](../revyo-seo/SKILL.md).
 - Debugging, architecture, or review: [revyo-engineering](../revyo-engineering/SKILL.md).
 
 Use relevant repository instructions/manifests to understand the current setup;

@@ -23,6 +23,7 @@ export function description(name, text, overrides) {
 }
 
 export function sourceUrl(source, revision, path) {
+  if (source.type === "http") return source.url;
   return `https://github.com/${source.repository}/blob/${revision}/${path}`;
 }
 
@@ -92,7 +93,29 @@ export function wrapper(name, summary, detail) {
 }
 
 export function remoteDetail(source, revision, path) {
+  if (source.type === "http")
+    return `Read the [official upstream skill](${source.url}) for the current protocol and report interpretation.\nThis adapter tracks its content hash without bundling the remote instructions.\nUse the exact public target and report timestamp; stale or missing reports do not\nestablish the current site's readiness. Keep paid or unavailable tools optional.`;
   return `Read the [upstream skill](${sourceUrl(source, revision, path + "/SKILL.md")})\nand fetch only the recipes needed for the current interaction from that directory.\nThis adapter does not redistribute the Transitions.dev library. The free skills\nneed no paid plan; use Pro material only when the user already has access.\nKeep the project's existing motion system when adapting a recipe.`;
+}
+
+export function skillDetail(source, skill, overrides) {
+  const detail =
+    source.mode === "remote"
+      ? remoteDetail(source, skill.revision, skill.context.path)
+      : source.destination === "revyo-seo"
+        ? "Read [UPSTREAM.md](UPSTREAM.md) for the relevant workflow and only its task-specific references."
+        : vendorDetail(skill.name);
+  const guidance = overrides.guidance?.[skill.name];
+  return guidance ? `${detail}\n\n${guidance}` : detail;
+}
+
+export function sourceAttribution(source, skill) {
+  const label = source.repository ?? source.id;
+  const revisionLabel = source.type === "http" ? "Content digest" : "Revision";
+  const license = source.license
+    ? `License: [upstream terms](${sourceUrl(source, skill.revision, source.license)}).`
+    : "Remote adapter only; no upstream skill content is redistributed.";
+  return `# Source\n\nUpstream: [${label}](${sourceUrl(source, skill.revision, skill.context.path)})\n\n${revisionLabel}: \`${skill.revision}\`\n\nMode: ${source.mode}. Revyo supplies the concise discovery wrapper and automatic invocation policy.\nRelative links and colliding skill invocations are adapted for the installed layout.\nDomain guidance and supporting files belong to their upstream authors.\n\n${license}\n`;
 }
 
 export function vendorDetail(name) {

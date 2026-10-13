@@ -12,7 +12,7 @@ This repository packages reusable agent skills. Keep application scaffolding gui
 - Verify stack instructions against current official docs when updating APIs. The requested defaults supersede the ar-platform reference.
 - Do not publish a release or create remote resources unless requested. `bun pm pack` is the local review artifact.
 
-Curated skills live in `revyo-design/` and `revyo-engineering/`. Update sources in
+Curated skills live in `revyo-design/`, `revyo-engineering/`, and `revyo-seo/`. Update sources in
 `upstream-sources.json` and discovery descriptions in `upstream-overrides.json`;
 `bun run upstream:sync` rebuilds the snapshots. Keep source attribution and licenses.
 Use concise discovery descriptions, automatic invocation, and task-specific

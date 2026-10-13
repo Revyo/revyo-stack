@@ -1,0 +1,6 @@
+interface:
+  display_name: "is-agentic"
+  short_description: "Check a public site or MCP endpoint for agent-readiness issues w"
+  default_prompt: "Use $is-agentic for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

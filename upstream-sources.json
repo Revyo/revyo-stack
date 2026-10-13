@@ -104,6 +104,23 @@
       "destination": "revyo-design",
       "license": "LICENSE",
       "mode": "vendor"
+    },
+    {
+      "id": "marketing-seo",
+      "repository": "coreyhaines31/marketingskills",
+      "paths": ["skills/seo-audit", "skills/programmatic-seo", "skills/ai-seo"],
+      "destination": "revyo-seo",
+      "license": "LICENSE",
+      "mode": "vendor"
+    },
+    {
+      "id": "is-agentic",
+      "type": "http",
+      "url": "https://is-agentic.com/.well-known/agent-skills/is-agentic/SKILL.md",
+      "name": "is-agentic",
+      "paths": ["skills/is-agentic"],
+      "destination": "revyo-seo",
+      "mode": "remote"
     }
   ]
 }
