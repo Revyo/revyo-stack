@@ -57,8 +57,10 @@ references take precedence; dashboards use the product-interface guidance.
 
 The catalog follows the [OpenAI prompting guidance](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra):
 precise discovery, progressive disclosure, proportionate process, and completion
-of authorized work. Upstream explicit-only flags are overridden by the generated
-entry points. Matt's `prototype`, `tdd`, and `teach` are installed as
+of authorized work. The nine original Revyo skill bodies follow the same guidance:
+focused entry points, conditional setup/runtime references, and verification scoped
+to the change. Their stack and measurement requirements are retained.
+Upstream explicit-only flags are overridden by the generated entry points. Matt's `prototype`, `tdd`, and `teach` are installed as
 `matt-prototype`, `matt-tdd`, and `matt-teach` to avoid collisions.
 
 This branch has not been published to npm. To try its complete catalog from a
