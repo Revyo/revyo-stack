@@ -1,0 +1,6 @@
+interface:
+  display_name: "pick-ui-library"
+  short_description: "Choose a UI library when evaluating frontend component or intera"
+  default_prompt: "Use $pick-ui-library for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

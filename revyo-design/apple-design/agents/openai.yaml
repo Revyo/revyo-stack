@@ -1,0 +1,6 @@
+interface:
+  display_name: "apple-design"
+  short_description: "Design Apple-style web interactions when working on physical mot"
+  default_prompt: "Use $apple-design for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

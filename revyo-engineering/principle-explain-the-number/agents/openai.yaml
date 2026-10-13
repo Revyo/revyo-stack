@@ -1,0 +1,6 @@
+interface:
+  display_name: "principle-explain-the-number"
+  short_description: "Verify what a measurement actually represents when interpreting "
+  default_prompt: "Use $principle-explain-the-number for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

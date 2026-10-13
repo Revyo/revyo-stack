@@ -1,0 +1,6 @@
+interface:
+  display_name: "imagegen-frontend-mobile"
+  short_description: "Generate mobile screen concepts and flows when the deliverable i"
+  default_prompt: "Use $imagegen-frontend-mobile for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

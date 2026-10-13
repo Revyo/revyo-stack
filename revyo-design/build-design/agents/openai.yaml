@@ -1,0 +1,6 @@
+interface:
+  display_name: "build-design"
+  short_description: "Implement a Figma design or reference image using the project’s "
+  default_prompt: "Use $build-design for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

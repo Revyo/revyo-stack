@@ -1,0 +1,6 @@
+interface:
+  display_name: "pr"
+  short_description: "Write or revise a pull request description when preparing change"
+  default_prompt: "Use $pr for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "writing-fragments"
+  short_description: "Explore raw ideas and fragments when developing material for a p"
+  default_prompt: "Use $writing-fragments for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

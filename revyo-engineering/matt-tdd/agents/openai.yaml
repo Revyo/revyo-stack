@@ -1,0 +1,6 @@
+interface:
+  display_name: "matt-tdd"
+  short_description: "Implement features or bug fixes test-first when TDD or red-green"
+  default_prompt: "Use $matt-tdd for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

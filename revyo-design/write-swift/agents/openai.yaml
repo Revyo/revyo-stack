@@ -1,0 +1,6 @@
+interface:
+  display_name: "write-swift"
+  short_description: "Write or review Swift code, including concurrency, value types, "
+  default_prompt: "Use $write-swift for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

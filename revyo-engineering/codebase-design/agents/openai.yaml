@@ -1,0 +1,6 @@
+interface:
+  display_name: "codebase-design"
+  short_description: "Design deep module interfaces and seams when restructuring code "
+  default_prompt: "Use $codebase-design for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

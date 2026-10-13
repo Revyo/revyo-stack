@@ -1,0 +1,6 @@
+interface:
+  display_name: "triage-issue-reports"
+  short_description: "Triage Slack issue reports when a configured Benny workflow is a"
+  default_prompt: "Use $triage-issue-reports for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

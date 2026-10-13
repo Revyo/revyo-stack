@@ -1,0 +1,6 @@
+interface:
+  display_name: "swiftui-liquid-glass"
+  short_description: "Implement or review Liquid Glass when a SwiftUI feature uses or "
+  default_prompt: "Use $swiftui-liquid-glass for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

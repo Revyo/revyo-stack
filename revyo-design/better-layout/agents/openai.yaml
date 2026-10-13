@@ -1,0 +1,6 @@
+interface:
+  display_name: "better-layout"
+  short_description: "Design or review responsive layout when adjusting grouping, alig"
+  default_prompt: "Use $better-layout for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

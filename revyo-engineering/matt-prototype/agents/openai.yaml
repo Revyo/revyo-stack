@@ -1,0 +1,6 @@
+interface:
+  display_name: "matt-prototype"
+  short_description: "Build a disposable prototype when testing a state model, logic, "
+  default_prompt: "Use $matt-prototype for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

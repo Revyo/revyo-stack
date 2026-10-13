@@ -1,0 +1,6 @@
+interface:
+  display_name: "how"
+  short_description: "Explain how a subsystem works or where behavior belongs when inv"
+  default_prompt: "Use $how for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

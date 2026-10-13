@@ -1,0 +1,6 @@
+interface:
+  display_name: "full-output-enforcement"
+  short_description: "Produce complete, unabridged code or documents when the user req"
+  default_prompt: "Use $full-output-enforcement for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

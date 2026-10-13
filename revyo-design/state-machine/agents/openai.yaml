@@ -1,0 +1,6 @@
+interface:
+  display_name: "state-machine"
+  short_description: "Render a component’s reachable states with fixtures when explori"
+  default_prompt: "Use $state-machine for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

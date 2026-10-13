@@ -1,0 +1,6 @@
+interface:
+  display_name: "git-guardrails-claude-code"
+  short_description: "Configure Claude Code git safety hooks when the user asks to blo"
+  default_prompt: "Use $git-guardrails-claude-code for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

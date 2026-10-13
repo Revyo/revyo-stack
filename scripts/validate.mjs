@@ -1,11 +1,10 @@
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { dirname, resolve } from "node:path";
+import { resolveSkillLink, skillDirectories } from "../lib/catalog.mjs";
 
 const root = resolve(import.meta.dir, "..");
 const errors = [];
-const skills = readdirSync(resolve(root, "skills"), {
-  withFileTypes: true,
-}).filter((entry) => entry.isDirectory());
+const skills = skillDirectories(root);
 
 function walk(path) {
   return readdirSync(path, { withFileTypes: true }).flatMap((entry) =>
@@ -15,8 +14,8 @@ function walk(path) {
   );
 }
 
-for (const { name } of skills) {
-  const skill = resolve(root, "skills", name, "SKILL.md");
+for (const { name, path } of skills) {
+  const skill = resolve(path, "SKILL.md");
   if (!existsSync(skill)) {
     errors.push(`${name}: missing SKILL.md`);
     continue;
@@ -29,6 +28,8 @@ for (const { name } of skills) {
       errors.push(`${name}: frontmatter name must match folder`);
     if (!/^description: .+/m.test(frontmatter[1]))
       errors.push(`${name}: missing description`);
+    if (String(Bun.YAML.parse(frontmatter[1]).description).length > 220)
+      errors.push(`${name}: discovery description exceeds 220 characters`);
   }
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(name) || name.length >= 64)
     errors.push(`${name}: invalid skill name`);
@@ -38,17 +39,35 @@ for (const { name } of skills) {
   if (!existsSync(metadata)) errors.push(`${name}: missing UI metadata`);
   else if (!readFileSync(metadata, "utf8").includes(`$${name}`))
     errors.push(`${name}: default prompt must invoke this skill`);
+  if (
+    existsSync(metadata) &&
+    Bun.YAML.parse(readFileSync(metadata, "utf8")).policy
+      ?.allow_implicit_invocation !== true
+  )
+    errors.push(`${name}: automatic invocation must be enabled`);
 }
+
+if (new Set(skills.map(({ name }) => name)).size !== skills.length)
+  errors.push("Duplicate installed skill names");
 
 for (const file of [
   resolve(root, "README.md"),
-  ...walk(resolve(root, "skills")).filter((file) => file.endsWith(".md")),
+  ...skills
+    .flatMap(({ path }) => walk(path))
+    .filter(
+      (file) =>
+        file.endsWith(".md") &&
+        !file.endsWith("/UPSTREAM.md") &&
+        !file.includes("/revyo-design/") &&
+        !file.includes("/revyo-engineering/"),
+    ),
+  ...skills.map(({ path }) => resolve(path, "SKILL.md")),
 ]) {
   const text = readFileSync(file, "utf8");
   for (const match of text.matchAll(/\[[^\]]*\]\(([^)]+)\)/g)) {
     const link = match[1].split("#")[0];
     if (!link || /^https?:\/\//.test(link)) continue;
-    if (!existsSync(resolve(dirname(file), link)))
+    if (!existsSync(resolveSkillLink(file, link, skills)))
       errors.push(`${file}: broken local link ${link}`);
   }
 }

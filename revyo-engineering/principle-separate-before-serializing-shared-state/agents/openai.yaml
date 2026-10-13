@@ -1,0 +1,6 @@
+interface:
+  display_name: "principle-separate-before-serializing-shared-state"
+  short_description: "Eliminate unnecessary shared writes when concurrent work contend"
+  default_prompt: "Use $principle-separate-before-serializing-shared-state for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

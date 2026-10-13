@@ -31,16 +31,22 @@ Use these defaults for new work. Explicit user requirements and existing project
 
 ## Read only the skills needed
 
-| When                            | Read                                         |
-| ------------------------------- | -------------------------------------------- |
-| Every project                   | [revyo-monorepo](../revyo-monorepo/SKILL.md) |
-| Web app or Next.js API host     | [revyo-web](../revyo-web/SKILL.md)           |
-| Mobile or desktop client        | [revyo-native](../revyo-native/SKILL.md)     |
-| Accounts or protected resources | [revyo-auth](../revyo-auth/SKILL.md)         |
-| Persistent data                 | [revyo-database](../revyo-database/SKILL.md) |
-| Backend TypeScript              | [revyo-effect](../revyo-effect/SKILL.md)     |
-| Hosted web/backend              | [revyo-vercel](../revyo-vercel/SKILL.md)     |
-| Every project                   | [revyo-testing](../revyo-testing/SKILL.md)   |
+Skills also apply automatically when their descriptions fit an existing-project
+task. Load the relevant domain guidance as the work reaches it, rather than
+reading the whole installed collection.
+
+| When                            | Read                                               |
+| ------------------------------- | -------------------------------------------------- |
+| Every project                   | [revyo-monorepo](../revyo-monorepo/SKILL.md)       |
+| Web app or Next.js API host     | [revyo-web](../revyo-web/SKILL.md)                 |
+| Mobile or desktop client        | [revyo-native](../revyo-native/SKILL.md)           |
+| Accounts or protected resources | [revyo-auth](../revyo-auth/SKILL.md)               |
+| Persistent data                 | [revyo-database](../revyo-database/SKILL.md)       |
+| Backend TypeScript              | [revyo-effect](../revyo-effect/SKILL.md)           |
+| Hosted web/backend              | [revyo-vercel](../revyo-vercel/SKILL.md)           |
+| Every project                   | [revyo-testing](../revyo-testing/SKILL.md)         |
+| Building or refining UI         | [revyo-design](../revyo-design/SKILL.md)           |
+| Debugging, architecture, review | [revyo-engineering](../revyo-engineering/SKILL.md) |
 
 For the architectural rationale derived from ar-platform, read [references/ar-platform.md](references/ar-platform.md). It is a design reference, not a dependency or an instruction to clone that project.
 
@@ -56,6 +62,6 @@ Keep source setup separate from cloud provisioning: generate the Vercel-ready fi
 
 Leave a README with actual local commands, required environment variables, chosen platforms and PostgreSQL provider, migration steps, and deployment setup. Update project-specific agent instructions outside the installer's managed block. Record consequential deviations in an ADR when they need a durable explanation.
 
-Run dependency installation, lint, type checks, meaningful tests, coverage plus CRAP, and the production build for the implemented targets. Confirm the root task graph includes the packages and native apps created. If a native toolchain or cloud credential is missing, report which check could not run and why; do not substitute a successful TS check for a native build.
+Verify the implemented targets with their relevant lint, type, behavioral, coverage/CRAP, and build checks. Use the checks needed for the changed behavior; repeat them when a fix or unresolved failure warrants it. Confirm the root task graph includes any packages and native apps created. If a native toolchain or cloud credential is missing, finish independent local work and report the specific check that remains.
 
 Report the implemented workflow, commands that passed, selected versions/providers, and any concrete blockers. Setup is complete only when required local work and checks have been handled.

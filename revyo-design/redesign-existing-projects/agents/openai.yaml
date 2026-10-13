@@ -1,0 +1,6 @@
+interface:
+  display_name: "redesign-existing-projects"
+  short_description: "Audit and improve an existing interface when redesigning or remo"
+  default_prompt: "Use $redesign-existing-projects for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

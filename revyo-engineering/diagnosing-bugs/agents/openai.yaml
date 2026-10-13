@@ -1,0 +1,6 @@
+interface:
+  display_name: "diagnosing-bugs"
+  short_description: "Diagnose a failing behavior or performance regression and verify"
+  default_prompt: "Use $diagnosing-bugs for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

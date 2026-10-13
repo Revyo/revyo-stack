@@ -1,0 +1,6 @@
+interface:
+  display_name: "industrial-brutalist-ui"
+  short_description: "Design industrial or brutalist interfaces when the brief calls f"
+  default_prompt: "Use $industrial-brutalist-ui for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "jakub",
+      "repository": "jakubkrehel/skills",
+      "paths": ["skills"],
+      "destination": "revyo-design",
+      "license": "LICENSE",
+      "mode": "vendor"
+    },
+    {
+      "id": "taste",
+      "repository": "leonxlnx/taste-skill",
+      "paths": ["skills"],
+      "destination": "revyo-design",
+      "license": "LICENSE",
+      "mode": "vendor"
+    },
+    {
+      "id": "emil",
+      "repository": "emilkowalski/skills",
+      "paths": ["skills"],
+      "destination": "revyo-design",
+      "license": "LICENSE",
+      "mode": "vendor"
+    },
+    {
+      "id": "vercel-design",
+      "repository": "vercel-labs/agent-skills",
+      "paths": ["skills/web-design-guidelines"],
+      "destination": "revyo-design",
+      "license": "README.md",
+      "mode": "vendor"
+    },
+    {
+      "id": "frontend",
+      "repository": "anthropics/skills",
+      "paths": ["skills/frontend-design"],
+      "destination": "revyo-design",
+      "license": "skills/frontend-design/LICENSE.txt",
+      "mode": "vendor"
+    },
+    {
+      "id": "mobile",
+      "repository": "designed-by-ai/skills",
+      "paths": ["skills/design-mobile-apps"],
+      "destination": "revyo-design",
+      "license": "LICENSE",
+      "mode": "vendor"
+    },
+    {
+      "id": "fluid",
+      "repository": "mickadesign/fluid-functionalism",
+      "paths": ["skills/fluid-functionalism"],
+      "destination": "revyo-design",
+      "license": "LICENSE",
+      "mode": "vendor"
+    },
+    {
+      "id": "transitions",
+      "repository": "Jakubantalik/transitions.dev",
+      "paths": ["skills"],
+      "destination": "revyo-design",
+      "license": "LICENSE",
+      "mode": "remote"
+    },
+    {
+      "id": "matt",
+      "repository": "mattpocock/skills",
+      "paths": ["skills"],
+      "destination": "revyo-engineering",
+      "license": "LICENSE",
+      "mode": "vendor"
+    },
+    {
+      "id": "poteto",
+      "repository": "cursor/plugins",
+      "paths": ["pstack/skills", "pstack/automations/benny/skills"],
+      "destination": "revyo-engineering",
+      "license": "pstack/LICENSE",
+      "mode": "vendor"
+    },
+    {
+      "id": "components",
+      "repository": "vercel/components.build",
+      "paths": ["skills/building-components"],
+      "destination": "revyo-design",
+      "license": "LICENSE",
+      "mode": "vendor"
+    },
+    {
+      "id": "swiftui",
+      "repository": "AvdLee/SwiftUI-Agent-Skill",
+      "paths": ["skills/swiftui-expert-skill"],
+      "destination": "revyo-design",
+      "license": "LICENSE",
+      "mode": "vendor"
+    },
+    {
+      "id": "glass",
+      "repository": "FloWritesCode/fwc-swiftui-skills",
+      "paths": ["skills/swiftui-liquid-glass"],
+      "destination": "revyo-design",
+      "license": "LICENSE",
+      "mode": "vendor"
+    }
+  ]
+}

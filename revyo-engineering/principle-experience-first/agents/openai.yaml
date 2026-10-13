@@ -1,0 +1,6 @@
+interface:
+  display_name: "principle-experience-first"
+  short_description: "Prioritize the user experience when deciding feature scope or pr"
+  default_prompt: "Use $principle-experience-first for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

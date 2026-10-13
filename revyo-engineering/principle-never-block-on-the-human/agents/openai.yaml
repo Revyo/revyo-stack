@@ -1,0 +1,6 @@
+interface:
+  display_name: "principle-never-block-on-the-human"
+  short_description: "Continue authorized reversible work when an unnecessary confirma"
+  default_prompt: "Use $principle-never-block-on-the-human for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

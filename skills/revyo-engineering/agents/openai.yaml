@@ -1,0 +1,6 @@
+interface:
+  display_name: "revyo-engineering"
+  short_description: "Route relevant engineering skills automatically"
+  default_prompt: "Use $revyo-engineering for the relevant parts of this task."
+policy:
+  allow_implicit_invocation: true

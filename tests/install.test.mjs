@@ -12,6 +12,7 @@ import {
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { installSkills, postinstallRoot } from "../lib/install.mjs";
+import { skillDirectories } from "../lib/catalog.mjs";
 
 const roots = [];
 const project = () => {
@@ -43,7 +44,7 @@ describe("skill installation", () => {
     );
     expect(
       Object.keys(state.files).filter((file) => file.endsWith("/SKILL.md")),
-    ).toHaveLength(9);
+    ).toHaveLength(skillDirectories(resolve(import.meta.dir, "..")).length);
     expect(state.files[installed]).toBe(
       hash(readFileSync(join(root, installed))),
     );
@@ -117,7 +118,7 @@ describe("skill installation", () => {
       file,
       "Custom before\n" +
         readFileSync(file, "utf8").replace(
-          "Read the relevant skills",
+          "## Revyo Software skills",
           "Edited routing",
         ) +
         "\nCustom after\n",

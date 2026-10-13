@@ -1,0 +1,6 @@
+interface:
+  display_name: "to-spec"
+  short_description: "Synthesize the current discussion into a specification when the "
+  default_prompt: "Use $to-spec for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

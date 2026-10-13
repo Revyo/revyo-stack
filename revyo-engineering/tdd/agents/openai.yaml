@@ -1,0 +1,6 @@
+interface:
+  display_name: "tdd"
+  short_description: "Add a focused failing or regression test when test-first work is"
+  default_prompt: "Use $tdd for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

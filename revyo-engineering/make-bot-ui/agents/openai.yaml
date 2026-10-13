@@ -1,0 +1,6 @@
+interface:
+  display_name: "make-bot-ui"
+  short_description: "Build a webhook-driven Grok Bot interface when that integration "
+  default_prompt: "Use $make-bot-ui for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "implement"
+  short_description: "Implement a scoped change from a specification or ticket."
+  default_prompt: "Use $implement for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

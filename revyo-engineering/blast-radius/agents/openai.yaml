@@ -1,0 +1,6 @@
+interface:
+  display_name: "blast-radius"
+  short_description: "Assess affected callers and systems when planning or reviewing a"
+  default_prompt: "Use $blast-radius for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

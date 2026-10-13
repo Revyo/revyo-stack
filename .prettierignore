@@ -4,3 +4,18 @@ reports/
 coverage/
 # Retain the exact source positions used by the real coverage fixture.
 tests/fixtures/vitest-v8/
+# Preserve third-party material; format only Revyo's discovery and attribution.
+revyo-design/**
+!revyo-design/*/
+!revyo-design/*/agents/
+!revyo-design/README.md
+!revyo-design/*/SKILL.md
+!revyo-design/*/SOURCE.md
+!revyo-design/*/agents/openai.yaml
+revyo-engineering/**
+!revyo-engineering/*/
+!revyo-engineering/*/agents/
+!revyo-engineering/README.md
+!revyo-engineering/*/SKILL.md
+!revyo-engineering/*/SOURCE.md
+!revyo-engineering/*/agents/openai.yaml

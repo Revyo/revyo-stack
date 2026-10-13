@@ -1,0 +1,6 @@
+interface:
+  display_name: "code-review"
+  short_description: "Review a branch or PR against project standards and its originat"
+  default_prompt: "Use $code-review for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

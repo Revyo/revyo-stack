@@ -1,0 +1,6 @@
+interface:
+  display_name: "improve-animations"
+  short_description: "Audit application motion and plan improvements when reviewing an"
+  default_prompt: "Use $improve-animations for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

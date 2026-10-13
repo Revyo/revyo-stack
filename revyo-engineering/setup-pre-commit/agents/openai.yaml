@@ -1,0 +1,6 @@
+interface:
+  display_name: "setup-pre-commit"
+  short_description: "Configure pre-commit formatting and checks when adding Husky or "
+  default_prompt: "Use $setup-pre-commit for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "principle-fix-root-causes"
+  short_description: "Trace a reproducible defect to its cause when a proposed fix onl"
+  default_prompt: "Use $principle-fix-root-causes for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true
