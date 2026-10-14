@@ -1,5 +1,8 @@
 # Observed assistant-showcase trial — 2026-10-14
 
+See the [visual gallery](gallery.md) for desktop/mobile screenshots, actual browser
+GIF recordings, original logo marks, and generated social cards.
+
 This follow-up uses a different product category and the corrected PageSpeedPlus catalog at `463677d6eb154b3907efeb02176f0cd5d94ca650`. A history-free agent received the ordinary product request in [protocol](protocol.md), without the maintenance discussion, named skills, or grading criteria. Its consumer repository is separate from this package. Normal client/global skills remained available; this is an observed trial, not an isolated model comparison or an estimated pass rate.
 
 ## Reference and scope
@@ -147,10 +150,10 @@ also fetched. All 1,107 managed files match the final installed catalog. See
 
 Desktop/tablet/mobile checks at 1440/768/390px and an editable approval journey
 passed in the implementation agent's browser checks; the evaluator separately
-inspected the live product hero. A later screenshot-export attempt in the hidden
-subtask could not access its browser, so this report does not imply saved Nook UI
-screenshots. Still's saved images and the directly fetched Nook social raster are
-included. The full Taste Chromium inspector and a full assistive-technology audit
+inspected the live product hero. A screenshot-export attempt in the hidden
+subtask could not access its browser. A later parent capture added Nook desktop/mobile
+screenshots and recordings to the visual gallery; that subsequent evidence is
+separate from the original handoff. The full Taste Chromium inspector and a full assistive-technology audit
 remain unverified. Actual assistant services and public deployment remain deferred.
 
 ## Outcome and limits
