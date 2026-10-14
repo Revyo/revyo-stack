@@ -1,0 +1,41 @@
+{
+  "consumer": "Pace functional control, assisted PostgreSQL and quality recovery",
+  "checks": [
+    "32 behavioral/database tests passed (27 web, 5 data)",
+    "Final production build and package type checks passed",
+    "Real browser-driven Lighthouse audit persisted and exported against production",
+    "Reload persistence, alert review, CSV download, and 390px layout checked",
+    "Explicit setup owns migrations/seeding; request/build paths do not migrate"
+  ],
+  "crap": {
+    "passed": true,
+    "sourceFiles": 21,
+    "summary": {
+      "functions": 231,
+      "failing": 0,
+      "maxScore": 8
+    }
+  },
+  "sourceGlobs": {
+    "include": [
+      "packages/*/src/**/*.{ts,tsx}",
+      "apps/*/{app,lib,components}/**/*.{ts,tsx}",
+      "scripts/monitor*.ts"
+    ],
+    "exclude": ["**/*.test.{ts,tsx}"],
+    "coverage": [
+      "packages/*/coverage/coverage-final.json",
+      "apps/*/coverage/coverage-final.json"
+    ],
+    "maxScore": 8,
+    "output": "reports/crap.json"
+  },
+  "coverage": {
+    "webLinesPercent": 91.33,
+    "webBranchesPercent": 88.01
+  },
+  "limits": [
+    "A local single-workspace implementation; not a clean first-pass stack success.",
+    "Hosted Neon and full SaaS account/tenant functionality are not established by this run."
+  ]
+}

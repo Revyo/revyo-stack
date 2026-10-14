@@ -1,0 +1,316 @@
+{
+  "consumer": "Pacekeep fresh functional run after scope answers",
+  "guidanceRevision": "e4f0a37dce7e6711a8375a022877cd464740bfa7",
+  "checks": [
+    "Frozen Bun install, build, types across five workspaces, lint and formatting passed",
+    "35 unit/integration tests across 10 files passed",
+    "Production browser flow passed: manual/scheduled mobile and desktop Lighthouse audits, alerts, CSV, ownership denial, mobile settings/navigation, logout/sign-in and retained history",
+    "390px viewport had 390px document width",
+    "Four verification pages paused; no queued/running jobs remained"
+  ],
+  "crap": {
+    "passed": true,
+    "sourceFiles": 39,
+    "summary": {
+      "functions": 271,
+      "failing": 0,
+      "maxScore": 6
+    }
+  },
+  "sourceGlobs": {
+    "include": [
+      "packages/*/src/**/*.{ts,tsx}",
+      "apps/*/{src,app,lib,components}/**/*.{ts,tsx}",
+      "tools/*.ts"
+    ],
+    "exclude": [
+      "**/*.test.{ts,tsx}",
+      "**/*.d.ts",
+      "tools/test.ts",
+      "tools/integration.ts"
+    ],
+    "coverage": [
+      "packages/*/coverage/coverage-final.json",
+      "apps/*/coverage/coverage-final.json",
+      "reports/root-coverage/coverage-final.json"
+    ],
+    "maxScore": 8,
+    "output": "reports/crap.json"
+  },
+  "managedSkills": {
+    "filesChecked": 1106,
+    "modified": 0,
+    "agentsBytes": 849
+  },
+  "sourceDigest": {
+    "apps/web/app/api/auth/[...all]/route.ts": "14b0126ce2d761ef776e0ff3b3b370ae63ba5c7fd696d0092f7908673fd5538a",
+    "apps/web/app/api/report/route.ts": "77d945d4f1a5c60c4f72a6b8e255cb0248d964770c2a33bf92b60d13908bb93a",
+    "apps/web/app/api/workspace/route.ts": "1f5ec970adac5de41072e2674dd45f964edc51c8f1427fc99f4f6e54f216468c",
+    "apps/web/app/app/page.tsx": "a66fac98a2af52b9413134228cbd6fc7d8c454d933cd9631ce90e11eb671486e",
+    "apps/web/app/layout.tsx": "773cae2fdb187de79edab4bca4113256b61ba01ea617c986349eeba9a2144463",
+    "apps/web/app/page.tsx": "d8816fd4f6ba4151bf68883b9267b9b4feb37b67d578e8757e16557aadab18db",
+    "apps/web/components/audits.tsx": "814dc876a50d1937cf5d9dffaa4d7cfb894d1ef320b90e98b2db6e060d112535",
+    "apps/web/components/auth-form.tsx": "ebd9728c51d8500d6114d5fe421b60c537c312c2d66b9d405e24bad5c639d178",
+    "apps/web/components/brand.tsx": "a2442a8e9fc932ddc944c18d12d86d68952e653c1e0bb46f15f12eedb7435d51",
+    "apps/web/components/dashboard.tsx": "cdb25855daeb2ddbd42f5694b0f7f576255c384a85a27b531494fdc638842ba9",
+    "apps/web/components/dialogs.tsx": "7940c7c456e216ee4a846c94f349062307dd27f374cdfe8adceb14ef076d569a",
+    "apps/web/components/overview.tsx": "c2484bc2f15fe3b03169a5b014283f49202bc85d12e5eb9c0f371bd044c0c2ea",
+    "apps/web/components/use-workspace.ts": "dbd9fc08f478c5357553341a9009ef0c0d23e34e0b6f522eccafac034078c2df",
+    "apps/web/lib/api.ts": "50768b674f7950397cf489fd881ef814bbc1702295304f13051ee9f482a2134f",
+    "apps/web/lib/client.ts": "15184d75a05e30450be6804eb0c48810995b73c6cef3cb637b8dd27fc6d43acb",
+    "apps/worker/src/main.ts": "319ccdbe01138e4cf10b91e359de0879639ecb02875b377f1e6d8e75464d6b86",
+    "apps/worker/src/worker.ts": "924a753ff0efd8a0eabd17e3a074d9cf7d072619b668734695f51268edf4d646",
+    "packages/auth/src/server.ts": "694ec2def251d2ffba3118f547ababfe6a83b2337df96e8877a04e5c3f162a1e",
+    "packages/core/src/contracts.ts": "be04b2accad749d018c0bd1067a89a6c0820a6f37f93d9a947aff4d711fd31ac",
+    "packages/core/src/management.ts": "8fb03cf392ce9e23709aa287b41d287f8404b290b5e0deab5ded156b7a583089",
+    "packages/core/src/network.ts": "f6fba510e5dd5f836eda8e00c8f1d0bfa3dbbbeae52915113866193f2a2ee654",
+    "packages/core/src/report.ts": "abe0f63273bf41d16659e51260142992d0a7bd28f18303e8b0138d9434199585",
+    "packages/core/src/scanner.ts": "ab07ae1f82863edbf9d0b732052cfa2ee61fcc0a1a1219b9cda8bef85f56ac4b",
+    "packages/core/src/services.ts": "71652777552a4865d4d74dbc776414017e7af1eeebe4ed72a9a04c14cc461514",
+    "packages/data/src/connection.ts": "6d8d303ab2b954ae0c693655c72ed648fa29dfa849374c21860bcf70f8bae1ea",
+    "packages/data/src/jobs.ts": "4c3ddd1647990d849cb1f9e5213473a2a95b51ad7b0ecd027ee6f3ede71045dc",
+    "packages/data/src/management.ts": "aa6cc1819f73ca9e151a3f4cbfebadaaf902c6634cd05ee5f05b9cc779def825",
+    "packages/data/src/ownership.ts": "d15eb8731ad275a04c3c40901c27e15791fde8e6f604265ac38a9922e73449f7",
+    "packages/data/src/schema.ts": "a8e68e0eb5ee0ae8e2ca2baa4775d74165c2f2a6da7f7755972a2e3213dee52f",
+    "packages/data/src/snapshot.ts": "73d456eaba7c9f69ce9ac8b85cfe8b2ee4251ca8d3aa754cf47b0828889d5840",
+    "tools/database.ts": "2bcb03edf449898bf9e93bfbda5ad8f01d241355700a70bb12853df63665afdb",
+    "tools/dev.ts": "28bba71c575163e9934e466407dba611678a5b5156196268356135a074edbed9",
+    "tools/environment.ts": "de7d6eb3787662555a4ab0d4ef3d118e541920d5e073cd00cd95acf89830bdbf",
+    "tools/migrations.ts": "f995c4b0ff4e156607461ca180dc0d5bcba6d8e4601aa1316d540d9db17b4772",
+    "tools/processes.ts": "7891f79992721ddba3c07e113dfb9f372f1037956843860c17045c1c78154b69"
+  },
+  "lockDigest": "c3e0a3bd4fa918f43cca077315eaf1bfc7ec20a13f243ee744a8ee452139b883",
+  "limits": [
+    "Hosted Neon connectivity was not tested.",
+    "The keyed Google PageSpeed adapter was not exercised against the live API.",
+    "No remote deployment, RUM, cache warming, WordPress integration, or outbound alert delivery is claimed.",
+    "Actual host Plan-mode activation was not available in this harness.",
+    "Aggregate unit/integration line coverage is 78.5%; the production browser flow is verified separately and is not included in that coverage measurement."
+  ],
+  "aggregateCoverage": {
+    "lines": {
+      "total": 614,
+      "covered": 482,
+      "skipped": 0,
+      "pct": 78.5
+    },
+    "statements": {
+      "total": 649,
+      "covered": 504,
+      "skipped": 0,
+      "pct": 77.65
+    },
+    "functions": {
+      "total": 271,
+      "covered": 214,
+      "skipped": 0,
+      "pct": 78.96
+    },
+    "branches": {
+      "total": 246,
+      "covered": 193,
+      "skipped": 0,
+      "pct": 78.45
+    },
+    "branchesTrue": {
+      "total": 0,
+      "covered": 0,
+      "skipped": 0,
+      "pct": "Unknown"
+    }
+  },
+  "coverageByArea": {
+    "packages/auth": {
+      "lines": {
+        "total": 14,
+        "covered": 12,
+        "skipped": 0,
+        "pct": 85.71
+      },
+      "statements": {
+        "total": 15,
+        "covered": 13,
+        "skipped": 0,
+        "pct": 86.66
+      },
+      "functions": {
+        "total": 4,
+        "covered": 4,
+        "skipped": 0,
+        "pct": 100
+      },
+      "branches": {
+        "total": 10,
+        "covered": 9,
+        "skipped": 0,
+        "pct": 90
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    },
+    "packages/data": {
+      "lines": {
+        "total": 133,
+        "covered": 120,
+        "skipped": 0,
+        "pct": 90.22
+      },
+      "statements": {
+        "total": 140,
+        "covered": 126,
+        "skipped": 0,
+        "pct": 90
+      },
+      "functions": {
+        "total": 67,
+        "covered": 58,
+        "skipped": 0,
+        "pct": 86.56
+      },
+      "branches": {
+        "total": 28,
+        "covered": 23,
+        "skipped": 0,
+        "pct": 82.14
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    },
+    "packages/core": {
+      "lines": {
+        "total": 98,
+        "covered": 91,
+        "skipped": 0,
+        "pct": 92.85
+      },
+      "statements": {
+        "total": 105,
+        "covered": 96,
+        "skipped": 0,
+        "pct": 91.42
+      },
+      "functions": {
+        "total": 34,
+        "covered": 29,
+        "skipped": 0,
+        "pct": 85.29
+      },
+      "branches": {
+        "total": 49,
+        "covered": 45,
+        "skipped": 0,
+        "pct": 91.83
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    },
+    "apps/worker": {
+      "lines": {
+        "total": 23,
+        "covered": 14,
+        "skipped": 0,
+        "pct": 60.86
+      },
+      "statements": {
+        "total": 23,
+        "covered": 14,
+        "skipped": 0,
+        "pct": 60.86
+      },
+      "functions": {
+        "total": 8,
+        "covered": 6,
+        "skipped": 0,
+        "pct": 75
+      },
+      "branches": {
+        "total": 2,
+        "covered": 1,
+        "skipped": 0,
+        "pct": 50
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    },
+    "apps/web": {
+      "lines": {
+        "total": 296,
+        "covered": 233,
+        "skipped": 0,
+        "pct": 78.71
+      },
+      "statements": {
+        "total": 307,
+        "covered": 241,
+        "skipped": 0,
+        "pct": 78.5
+      },
+      "functions": {
+        "total": 144,
+        "covered": 111,
+        "skipped": 0,
+        "pct": 77.08
+      },
+      "branches": {
+        "total": 137,
+        "covered": 109,
+        "skipped": 0,
+        "pct": 79.56
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    },
+    "tools": {
+      "lines": {
+        "total": 50,
+        "covered": 12,
+        "skipped": 0,
+        "pct": 24
+      },
+      "statements": {
+        "total": 59,
+        "covered": 14,
+        "skipped": 0,
+        "pct": 23.72
+      },
+      "functions": {
+        "total": 14,
+        "covered": 6,
+        "skipped": 0,
+        "pct": 42.85
+      },
+      "branches": {
+        "total": 20,
+        "covered": 6,
+        "skipped": 0,
+        "pct": 30
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": "Unknown"
+      }
+    }
+  }
+}
