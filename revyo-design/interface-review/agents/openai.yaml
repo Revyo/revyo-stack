@@ -1,0 +1,6 @@
+interface:
+  display_name: "interface-review"
+  short_description: "Review UI changes in a branch, PR, or working diff for design an"
+  default_prompt: "Use $interface-review for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "principle-test-behavior-not-implementation"
+  short_description: "Test observable behavior when adding or reviewing tests, especia"
+  default_prompt: "Use $principle-test-behavior-not-implementation for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

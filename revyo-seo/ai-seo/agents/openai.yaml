@@ -1,0 +1,6 @@
+interface:
+  display_name: "ai-seo"
+  short_description: "Improve content discovery and citation by AI search systems when"
+  default_prompt: "Use $ai-seo for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

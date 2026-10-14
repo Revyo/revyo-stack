@@ -1,0 +1,6 @@
+interface:
+  display_name: "arena"
+  short_description: "Compare independent candidate designs or implementations when a "
+  default_prompt: "Use $arena for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

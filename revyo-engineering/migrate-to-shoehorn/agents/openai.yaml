@@ -1,0 +1,6 @@
+interface:
+  display_name: "migrate-to-shoehorn"
+  short_description: "Replace test type assertions with @total-typescript/shoehorn whe"
+  default_prompt: "Use $migrate-to-shoehorn for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

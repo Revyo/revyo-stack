@@ -9,6 +9,7 @@ import {
 } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
+import { skillDirectories } from "../lib/catalog.mjs";
 
 const sourceRoot = resolve(import.meta.dir, "..");
 const scratch = mkdtempSync(join(tmpdir(), "revyo-package-"));
@@ -136,7 +137,44 @@ function verify(root, commandRoot = root) {
   assert.equal(
     Object.keys(state.files).filter((file) => file.endsWith("/SKILL.md"))
       .length,
-    9,
+    skillDirectories(sourceRoot).length,
+  );
+  assert.ok(
+    existsSync(
+      join(root, ".agents/skills/design-taste-frontend/scripts/draw.mjs"),
+    ),
+    "Taste runtime assets were not packed",
+  );
+  assert.ok(
+    existsSync(join(root, ".agents/skills/poteto-mode/playbooks/feature.md")),
+    "Poteto playbooks were not packed",
+  );
+  assert.ok(
+    existsSync(join(root, ".agents/skills/matt-tdd/UPSTREAM.md")),
+    "Matt's namespaced TDD skill was not packed",
+  );
+  assert.ok(
+    existsSync(join(root, ".agents/skills/seo-audit/UPSTREAM.md")),
+    "SEO skill was not packed",
+  );
+  assert.ok(
+    existsSync(
+      join(root, ".agents/skills/ai-seo/references/agent-readiness.md"),
+    ),
+    "AI SEO references were not packed",
+  );
+  assert.ok(
+    existsSync(join(root, ".agents/skills/is-agentic/SKILL.md")),
+    "HTTP source adapter was not packed",
+  );
+  assert.ok(
+    existsSync(
+      join(
+        root,
+        ".agents/skills/revyo-brand-social/references/verification.md",
+      ),
+    ),
+    "Brand/share verification was not packed",
   );
   assert.ok(
     run(commandRoot, ["bunx", "--no-install", "revyo-crap", "--help"]).includes(

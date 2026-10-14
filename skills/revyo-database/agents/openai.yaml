@@ -2,3 +2,5 @@ interface:
   display_name: "Revyo Database"
   short_description: "Set up Neon or PlanetScale Postgres"
   default_prompt: "Use $revyo-database to configure this project's PostgreSQL database on Neon or PlanetScale Postgres."
+policy:
+  allow_implicit_invocation: true

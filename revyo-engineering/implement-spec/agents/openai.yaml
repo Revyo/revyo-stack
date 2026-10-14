@@ -1,0 +1,6 @@
+interface:
+  display_name: "implement-spec"
+  short_description: "Implement an existing specification and its planned tickets."
+  default_prompt: "Use $implement-spec for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

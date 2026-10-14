@@ -1,0 +1,6 @@
+interface:
+  display_name: "web-design-guidelines"
+  short_description: "Review web UI for accessibility, usability, and design regressio"
+  default_prompt: "Use $web-design-guidelines for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

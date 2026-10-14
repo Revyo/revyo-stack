@@ -28,6 +28,10 @@
     "bin",
     "lib",
     "skills",
+    "revyo-design",
+    "revyo-engineering",
+    "revyo-seo",
+    "upstream-lock.json",
     "README.md",
     "LICENSE"
   ],
@@ -40,6 +44,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "validate": "bun scripts/validate.mjs",
+    "upstream:sync": "bun scripts/sync-upstream.mjs && prettier --write revyo-design revyo-engineering revyo-seo upstream-lock.json",
     "check": "bun run format:check && bun run validate && bun run quality:crap && bun run test:install",
     "prepublishOnly": "bun run check"
   },

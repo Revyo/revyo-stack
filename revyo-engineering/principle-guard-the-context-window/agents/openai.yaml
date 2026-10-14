@@ -1,0 +1,6 @@
+interface:
+  display_name: "principle-guard-the-context-window"
+  short_description: "Reduce context overhead when large outputs, repeated reads, or p"
+  default_prompt: "Use $principle-guard-the-context-window for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

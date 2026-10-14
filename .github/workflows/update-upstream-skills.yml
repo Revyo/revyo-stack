@@ -1,0 +1,43 @@
+name: Update upstream skills
+
+on:
+  schedule:
+    - cron: "23 8 * * 1"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - upstream-sources.json
+      - upstream-overrides.json
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: upstream-skills
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.3.12"
+      - run: bun install --frozen-lockfile
+      - run: bun run upstream:sync
+      - run: bun run check
+      - name: Create one current draft update PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          bun scripts/update-upstream-pr.mjs

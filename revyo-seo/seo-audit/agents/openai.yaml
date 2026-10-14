@@ -1,0 +1,6 @@
+interface:
+  display_name: "seo-audit"
+  short_description: "Diagnose technical, indexing, metadata, or on-page SEO issues wh"
+  default_prompt: "Use $seo-audit for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

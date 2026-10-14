@@ -1,0 +1,6 @@
+interface:
+  display_name: "writing-shape"
+  short_description: "Turn established material into an article when shaping a coheren"
+  default_prompt: "Use $writing-shape for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

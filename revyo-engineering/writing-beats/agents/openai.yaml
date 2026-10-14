@@ -1,0 +1,6 @@
+interface:
+  display_name: "writing-beats"
+  short_description: "Arrange researched material into narrative beats when structurin"
+  default_prompt: "Use $writing-beats for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "principle-foundational-thinking"
+  short_description: "Choose core data structures and ownership before implementing lo"
+  default_prompt: "Use $principle-foundational-thinking for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

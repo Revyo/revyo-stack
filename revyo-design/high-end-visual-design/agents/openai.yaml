@@ -1,0 +1,6 @@
+interface:
+  display_name: "high-end-visual-design"
+  short_description: "Design polished web interfaces when the brief calls for an agenc"
+  default_prompt: "Use $high-end-visual-design for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

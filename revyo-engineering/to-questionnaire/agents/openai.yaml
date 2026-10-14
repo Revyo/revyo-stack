@@ -1,0 +1,6 @@
+interface:
+  display_name: "to-questionnaire"
+  short_description: "Prepare a questionnaire when a decision needs answers from anoth"
+  default_prompt: "Use $to-questionnaire for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

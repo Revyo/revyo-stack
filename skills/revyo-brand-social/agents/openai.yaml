@@ -1,0 +1,6 @@
+interface:
+  display_name: "Revyo Brand and Social"
+  short_description: "Build brand assets and working social share previews"
+  default_prompt: "Use $revyo-brand-social for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

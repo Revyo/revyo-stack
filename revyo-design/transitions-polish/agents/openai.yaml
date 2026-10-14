@@ -1,0 +1,6 @@
+interface:
+  display_name: "transitions-polish"
+  short_description: "Refine existing web motion when aligning timing, distance, easin"
+  default_prompt: "Use $transitions-polish for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

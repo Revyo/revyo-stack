@@ -1,0 +1,6 @@
+interface:
+  display_name: "principle-make-operations-idempotent"
+  short_description: "Design retry-safe commands and processing when operations can be"
+  default_prompt: "Use $principle-make-operations-idempotent for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

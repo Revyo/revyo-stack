@@ -1,0 +1,6 @@
+interface:
+  display_name: "variant"
+  short_description: "Build alternatives for a UI component when comparing design dire"
+  default_prompt: "Use $variant for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

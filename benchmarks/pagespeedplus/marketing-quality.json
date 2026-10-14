@@ -1,0 +1,52 @@
+{
+  "consumer": "Tallypace marketing phase",
+  "checks": [
+    "22 behavioral and gate tests passed",
+    "Production build and type checks passed",
+    "Planner browser interaction and real download inspected",
+    "Three marketing routes with distinct metadata and shared navigation verified"
+  ],
+  "sourceGlobs": {
+    "include": ["{app,lib,scripts}/**/*.{ts,tsx,js,mjs}"],
+    "exclude": [
+      "**/*.d.ts",
+      "**/*.{test,spec}.{ts,tsx}",
+      "**/{tests,__tests__,__fixtures__,generated}/**"
+    ],
+    "coverage": ["coverage/coverage-final.json"],
+    "maxScore": 8,
+    "output": "reports/crap.json"
+  },
+  "crap": {
+    "passed": true,
+    "sourceFiles": 14,
+    "summary": {
+      "functions": 21,
+      "failing": 0,
+      "maxScore": 6
+    }
+  },
+  "coverage": {
+    "linesPercent": 95.45,
+    "statementsPercent": 95.45,
+    "functionsPercent": 100,
+    "branchesPercent": 100
+  },
+  "sourceDigest": {
+    "app/components/mark.tsx": "55ece395dae9fd209a790743701f19be42ef7af5fb6cf31414caa145b2f5bb55",
+    "app/components/pricing-details.tsx": "f258738ea9d86afcbb71fd5dadfb40e584e4b945e98be200495706655c59a311",
+    "app/components/receipt.tsx": "013c5b75734dd4f0d58aecab4b0392f68d812166c3695e02cffc3e5935cdfeb2",
+    "app/components/setup-planner.tsx": "9d5a7c8b0fc3e1cd6753f43ae3e7f22d414dd3d682bd8ef47f52abf999bd3250",
+    "app/components/site-footer.tsx": "9c76dde9850a8c8028d91d188780d6d46af20d55921346800527410a64e46fbe",
+    "app/components/site-header.tsx": "ed435f91c3e7a9bd7f8cccabc7382d4f90346a4f260396459f0813c146cd9b4c",
+    "app/components/workflow-story.tsx": "6838b2f442261c03b2d3a0bbbd9e082c3a323c58ea9f19f8fa1262375ba4119c",
+    "app/globals.css": "4b9d329980ac876cfd26127636e132a83b996ccbad6b56ab500d791ca8b174f3",
+    "app/layout.tsx": "747303fb1f3ed64a44e26fac2288bd1a078e56e22243e119456f09363101cf1c",
+    "app/page.tsx": "8cc1c1c14837f657e859966733e8fe74f6da37ec600aec7f7141666ff80a6076",
+    "app/pricing/page.tsx": "ad4fa9ececde42f16324a4346baf08a5091052b3c670d3146faa29ddb9b5d29e",
+    "app/workflow/page.tsx": "47279f00dd4375a6c0fc1a112d65c8e51c3d28273296badad9d1e6f65986766b",
+    "lib/brand-assets.ts": "7055215cfd7f9b7640f95aebba2944b4074907795fd90b1bb74f2315d5c7eccf",
+    "lib/page-metadata.ts": "1dfc2ab0ecdf4180233819af606b4d9154ca13b4f4ac4a78911bd440618563b1",
+    "scripts/generate-brand.ts": "4314fb73dfc9f75eacf71e132a50a0977e2a1f80918d160f72a70c6fa0dda3e3"
+  }
+}

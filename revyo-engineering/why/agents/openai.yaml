@@ -1,0 +1,6 @@
+interface:
+  display_name: "why"
+  short_description: "Investigate design rationale or historical decisions when explai"
+  default_prompt: "Use $why for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "better-accessibility"
+  short_description: "Review or fix web UI accessibility when changing keyboard, focus"
+  default_prompt: "Use $better-accessibility for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

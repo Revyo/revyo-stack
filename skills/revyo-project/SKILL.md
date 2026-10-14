@@ -1,61 +1,68 @@
 ---
 name: revyo-project
-description: Set up a new Revyo Software project using the installed stack skills, choosing the requested apps and wiring architecture, testing, and deployment together.
+description: Set up a new Revyo project and coordinate its required apps, stack, and first working workflow.
 ---
 
-# Revyo project
+# Revyo project setup
 
-Use this as the entry point for a new Revyo Software project. Deliver a runnable project in the current repository, with a working vertical slice and its checks. The skills are installed guidance, not a starter app to replace the repository with.
+Deliver the requested runnable project in the current repository. A working
+vertical slice establishes that the chosen boundaries integrate; it does not
+limit a broader requested scope. Preserve existing files and installed skills.
 
-## Stack decisions
+Start a new product with [project planning](references/planning.md), even when the
+user did not invoke `/plan`. Resolve consequential product choices before coding;
+do not repeat settled questions or turn a clear implementation request into an
+approval loop.
 
-| Area                   | Revyo default                                                  |
-| ---------------------- | -------------------------------------------------------------- |
-| Workspace              | Bun and Turborepo; TypeScript for web and backend              |
-| Web                    | Latest stable Next.js and compatible React; App Router         |
-| Mobile and desktop     | Native language, UI, and platform toolchain                    |
-| Authentication         | Better Auth unless the product explicitly needs another choice |
-| Hosted web and backend | Vercel                                                         |
-| Database               | PostgreSQL on Neon or PlanetScale Postgres                     |
-| Backend TypeScript     | Effect v4                                                      |
-| Quality                | Behavioral tests, reproducible coverage, per-function CRAP ≤ 8 |
+## New-project defaults
 
-Use these defaults for new work. Explicit user requirements and existing project instructions take precedence. Do not migrate an existing stack just because this skill is loaded. Do not create mobile, desktop, or a separate server app unless the product calls for it.
+- Bun/Turborepo workspaces and TypeScript for web/backend.
+- Latest stable Next.js App Router with compatible React.
+- Native platform UI/toolchains for requested mobile/desktop targets.
+- Better Auth when authentication is needed.
+- PostgreSQL on Neon or PlanetScale Postgres; Drizzle schema/migration tooling.
+- Effect v4 backend services and Vercel web/API hosting.
+- Behavioral tests, reproducible coverage, and per-function CRAP ≤ 8 for generated
+  source, with runnable quality commands in each phase, including marketing-only.
 
-## Begin in the current repo
+Missing hosted credentials do not change these architecture defaults: durable
+product data still needs the PostgreSQL live-adapter path. Isolated test services
+establish local behavior, not a replacement production persistence architecture.
 
-1. Read existing `AGENTS.md`, `CONTEXT.md`/`CONTEXT-MAP.md`, relevant ADRs, and package manifests if present. Preserve installed skills and their installation metadata, including `.agents/skills`, any `.agents/revyo-stack.json`, and any `.claude/skills` copy. Keep an existing `@revyo/stack` dependency and Bun trust setting if present; one-command skill installation does not require them. Merge root configuration rather than running a generator over nonempty files.
-2. Resolve product name, first user workflow, app targets, database provider, and authentication needs from the request. Ask only for missing decisions that materially change the result. The database engine is always PostgreSQL. For an unspecified provider, use Neon Postgres as an explicit, reversible starting assumption; a PlanetScale request means PlanetScale Postgres. Native target operating systems need a concrete choice before platform scaffolding.
-3. Resolve current compatible versions from the registry and official docs at execution time. Use latest stable Next.js, never an old version copied from a reference repo. Require Effect major 4; if only a prerelease is available, pin that v4 release and matching ecosystem versions rather than falling back to v3. Commit `bun.lock` and record toolchain/runtime versions.
-4. State the chosen apps and provider assumptions, then continue with all independent setup. Credentials or unavailable platform SDKs should not prevent local source work and isolated tests.
+Existing project instructions and explicit user requirements take precedence.
+Do not add apps, authentication, infrastructure, or migrations beyond the product’s
+needs. For setup/version/provider decisions, use [setup details](references/setup.md).
 
-## Read only the skills needed
+## Load guidance as the work needs it
 
-| When                            | Read                                         |
-| ------------------------------- | -------------------------------------------- |
-| Every project                   | [revyo-monorepo](../revyo-monorepo/SKILL.md) |
-| Web app or Next.js API host     | [revyo-web](../revyo-web/SKILL.md)           |
-| Mobile or desktop client        | [revyo-native](../revyo-native/SKILL.md)     |
-| Accounts or protected resources | [revyo-auth](../revyo-auth/SKILL.md)         |
-| Persistent data                 | [revyo-database](../revyo-database/SKILL.md) |
-| Backend TypeScript              | [revyo-effect](../revyo-effect/SKILL.md)     |
-| Hosted web/backend              | [revyo-vercel](../revyo-vercel/SKILL.md)     |
-| Every project                   | [revyo-testing](../revyo-testing/SKILL.md)   |
+- Workspace/package/task setup: [revyo-monorepo](../revyo-monorepo/SKILL.md).
+- Web/API implementation: [revyo-web](../revyo-web/SKILL.md).
+- Native targets: [revyo-native](../revyo-native/SKILL.md).
+- Authentication/authorization: [revyo-auth](../revyo-auth/SKILL.md).
+- Persistence: [revyo-database](../revyo-database/SKILL.md).
+- Backend services: [revyo-effect](../revyo-effect/SKILL.md).
+- Deployment: [revyo-vercel](../revyo-vercel/SKILL.md).
+- Test/coverage/gate configuration: [revyo-testing](../revyo-testing/SKILL.md).
+- UI: [revyo-design](../revyo-design/SKILL.md).
+- Public-site search, discovery, and share assets: [revyo-seo](../revyo-seo/SKILL.md).
+- Debugging, architecture, or review: [revyo-engineering](../revyo-engineering/SKILL.md).
 
-For the architectural rationale derived from ar-platform, read [references/ar-platform.md](references/ar-platform.md). It is a design reference, not a dependency or an instruction to clone that project.
-
-## Build a vertical slice
-
-Create only the workspace packages the first workflow needs. A typical authenticated web project has `apps/web`, `packages/auth`, `packages/data`, one or more domain packages, and shared configuration. HTTP routes and native clients consume domain contracts; they do not contain the domain's persistence rules.
-
-Implement one meaningful workflow through validated input, verified session/authorization when needed, an Effect use case, a repository adapter, and a visible result. Supply an isolated test layer and tests for success and expected failure. Stub only external infrastructure that is unavailable; label it and retain a working live-adapter path. Do not claim a mocked database, login, or deployment is live.
-
-Keep source setup separate from cloud provisioning: generate the Vercel-ready files, migrations, and environment contract during setup. Create provider resources or deploy when the user's instruction authorizes those actions; otherwise report the exact remaining command or account requirement. Do not make a production migration part of install or build.
+Use relevant repository instructions/manifests to understand the current setup;
+consult context maps or ADRs when they bear on the changed domain or decision.
+The [ar-platform provenance](references/ar-platform.md) is optional architectural
+background, not a prerequisite or a project to clone.
 
 ## Completion
 
-Leave a README with actual local commands, required environment variables, chosen platforms and PostgreSQL provider, migration steps, and deployment setup. Update project-specific agent instructions outside the installer's managed block. Record consequential deviations in an ADR when they need a durable explanation.
+Continue through implementation, relevant checks, and change-related fixes until
+the requested local result works. Before handoff, run the phase's documented
+behavior checks and fresh-coverage/shared CRAP gate against its generated source;
+build/type checks alone do not establish that quality contract.
+Keep commands, required environment, migration
+steps, and deployment setup documented for the actual targets. Record consequential
+architecture choices when they need a durable explanation.
 
-Run dependency installation, lint, type checks, meaningful tests, coverage plus CRAP, and the production build for the implemented targets. Confirm the root task graph includes the packages and native apps created. If a native toolchain or cloud credential is missing, report which check could not run and why; do not substitute a successful TS check for a native build.
-
-Report the implemented workflow, commands that passed, selected versions/providers, and any concrete blockers. Setup is complete only when required local work and checks have been handled.
+Carry out external actions within the user’s authorized scope. Missing credentials
+or SDKs do not prevent independent source work and isolated verification. Identify
+any unverified live boundary precisely, and report the implemented workflow and
+checks that establish it.

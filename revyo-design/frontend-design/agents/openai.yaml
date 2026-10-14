@@ -1,0 +1,6 @@
+interface:
+  display_name: "frontend-design"
+  short_description: "Design and implement distinctive frontend UI when building or re"
+  default_prompt: "Use $frontend-design for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

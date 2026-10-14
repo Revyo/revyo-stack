@@ -1,0 +1,6 @@
+interface:
+  display_name: "principle-build-the-lever"
+  short_description: "Build reusable tooling when repetitive edits, migrations, or mea"
+  default_prompt: "Use $principle-build-the-lever for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

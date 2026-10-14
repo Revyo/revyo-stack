@@ -1,0 +1,122 @@
+{
+  "capturedAt": "2026-10-14",
+  "kind": "Actual local-browser captures and original generated brand assets",
+  "recording": {
+    "still-approval.gif": {
+      "sourceFrames": 60,
+      "fps": 10,
+      "seconds": 6,
+      "journey": "Pending preview, approval feedback, replay"
+    },
+    "nook-journey.gif": {
+      "sourceFrames": 110,
+      "fps": 10,
+      "seconds": 11,
+      "journey": "Approve/replay, follow-up, travel, return to lunch example"
+    }
+  },
+  "limits": [
+    "GIFs are sampled browser captures; they are not animation-performance measurements.",
+    "Scenes use fictional showcase content or synthetic local verification data."
+  ],
+  "files": {
+    "nook-desktop.jpg": {
+      "bytes": 72872,
+      "sha256": "0bcaf2e5fb33eb6439aeb627b45c675b1b880c36e743bb372743516c336842c8",
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG"
+    },
+    "nook-journey.gif": {
+      "bytes": 1469970,
+      "sha256": "6f921311b0c0b1ddcf14d90249fe9b14e231109549c40253968108728b987644",
+      "width": 1280,
+      "height": 720,
+      "format": "GIF",
+      "frames": 110,
+      "durationMs": 11000,
+      "distinctRenderedFrames": 31
+    },
+    "nook-mark.png": {
+      "bytes": 3519,
+      "sha256": "0f65e38d6b67d16a9109b67f2c64737082d6f015e46b4f73f63528d05894d595",
+      "width": 180,
+      "height": 180,
+      "format": "PNG"
+    },
+    "nook-mark.svg": {
+      "bytes": 203,
+      "sha256": "3359b79aaeb40c40d134c5ba37e34a15c09fb0ae8356ad58b2bcc69fb37bb5c3",
+      "viewBox": "0 0 64 64"
+    },
+    "nook-mobile-full.jpg": {
+      "bytes": 297903,
+      "sha256": "8b66e406fbcadc610c1c4e0883058613e20e9551eb7b90895d00a0aabab16c3e",
+      "width": 390,
+      "height": 6985,
+      "format": "JPEG"
+    },
+    "nook-mobile.jpg": {
+      "bytes": 43348,
+      "sha256": "da005fe7081d4f7f94d7c5b30e1ebb6125cebe778b27b450a8433a8783261c24",
+      "width": 390,
+      "height": 844,
+      "format": "JPEG"
+    },
+    "pacekeep-desktop.png": {
+      "bytes": 107213,
+      "sha256": "83ab7560f089d0f0ccf759b1a3947595f3783c162113879e2d3392140cfe38ff",
+      "width": 1440,
+      "height": 1190,
+      "format": "PNG"
+    },
+    "pacekeep-mobile.png": {
+      "bytes": 61681,
+      "sha256": "a29f903a4365ddce616fa29260f068b729db35fe6a467c1f571bb4db14edcf32",
+      "width": 390,
+      "height": 1109,
+      "format": "PNG"
+    },
+    "still-approval.gif": {
+      "bytes": 294148,
+      "sha256": "7562378d338e8225a4f42ef0c19e2e662a0dcd86f1b87ce3e1f5366fc26e53c0",
+      "width": 1280,
+      "height": 720,
+      "format": "GIF",
+      "frames": 60,
+      "durationMs": 6000,
+      "distinctRenderedFrames": 13
+    },
+    "still-mark.png": {
+      "bytes": 3288,
+      "sha256": "4a2a050d26c76978a33dd78af2a30ba199082fab3cbc7e602b3d78d1e8b79052",
+      "width": 180,
+      "height": 180,
+      "format": "PNG"
+    },
+    "still-mark.svg": {
+      "bytes": 237,
+      "sha256": "3b6db00721b5e47f68840a182ea8d27e7273bc97b2bff0bdbdcb843a337f9796",
+      "viewBox": "0 0 40 40"
+    },
+    "tallypace-desktop.jpg": {
+      "bytes": 66703,
+      "sha256": "524dda80e2052e8106a9fb395079f9afffa06d76f82cb31cc9e189274a7ab5b4",
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG"
+    },
+    "tallypace-mark.png": {
+      "bytes": 2045,
+      "sha256": "4c858c69baefd7e0fe25e5f15820af3bfee74aa0c48b4c3e2e41af5d4145100f",
+      "width": 180,
+      "height": 180,
+      "format": "PNG"
+    },
+    "tallypace-mark.svg": {
+      "bytes": 215,
+      "sha256": "1e298117f1756791453a7d45b69f2fec4684b7ee9c6c6ee72c7437b9070658e6",
+      "viewBox": "0 0 64 64"
+    }
+  }
+}

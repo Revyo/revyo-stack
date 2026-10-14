@@ -1,0 +1,6 @@
+interface:
+  display_name: "grill-with-docs"
+  short_description: "Interview the user to sharpen a plan while recording domain voca"
+  default_prompt: "Use $grill-with-docs for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

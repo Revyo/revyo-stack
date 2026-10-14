@@ -1,0 +1,6 @@
+interface:
+  display_name: "better-writing"
+  short_description: "Write or review interface copy when changing labels, errors, emp"
+  default_prompt: "Use $better-writing for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

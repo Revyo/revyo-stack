@@ -1,0 +1,6 @@
+interface:
+  display_name: "setup-ts-deep-modules"
+  short_description: "Configure TypeScript module-boundary checks when adopting deep-m"
+  default_prompt: "Use $setup-ts-deep-modules for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

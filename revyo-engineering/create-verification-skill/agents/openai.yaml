@@ -1,0 +1,6 @@
+interface:
+  display_name: "create-verification-skill"
+  short_description: "Create project-specific verification guidance when the app lacks"
+  default_prompt: "Use $create-verification-skill for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

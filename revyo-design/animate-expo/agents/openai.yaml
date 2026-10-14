@@ -1,0 +1,6 @@
+interface:
+  display_name: "animate-expo"
+  short_description: "Implement React Native or Expo motion, gestures, haptics, and sc"
+  default_prompt: "Use $animate-expo for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

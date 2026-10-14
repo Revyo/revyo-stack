@@ -1,0 +1,6 @@
+interface:
+  display_name: "writing-for-agents"
+  short_description: "Write concise instructions and reference documents when another "
+  default_prompt: "Use $writing-for-agents for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

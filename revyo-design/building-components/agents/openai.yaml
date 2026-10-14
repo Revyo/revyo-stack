@@ -1,0 +1,6 @@
+interface:
+  display_name: "building-components"
+  short_description: "Build accessible, composable UI components or component librarie"
+  default_prompt: "Use $building-components for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "principle-subtract-before-you-add"
+  short_description: "Remove obsolete code before extending a design when unused layer"
+  default_prompt: "Use $principle-subtract-before-you-add for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

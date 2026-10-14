@@ -1,0 +1,6 @@
+interface:
+  display_name: "matt-teach"
+  short_description: "Teach a technical topic through a structured learning workflow w"
+  default_prompt: "Use $matt-teach for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

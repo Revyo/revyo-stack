@@ -1,0 +1,6 @@
+interface:
+  display_name: "emil-design-eng"
+  short_description: "Build or refine product UI components, interactions, and visual "
+  default_prompt: "Use $emil-design-eng for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

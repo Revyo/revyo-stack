@@ -1,0 +1,6 @@
+interface:
+  display_name: "design-mobile-apps"
+  short_description: "Design native mobile app screens and flows when working on iOS o"
+  default_prompt: "Use $design-mobile-apps for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

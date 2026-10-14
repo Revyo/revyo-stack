@@ -1,0 +1,6 @@
+interface:
+  display_name: "grilling"
+  short_description: "Interview the user about assumptions and tradeoffs when a plan o"
+  default_prompt: "Use $grilling for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

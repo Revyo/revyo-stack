@@ -1,0 +1,6 @@
+interface:
+  display_name: "design-taste-frontend"
+  short_description: "Art-direct, build, restyle, or review public-facing web pages wi"
+  default_prompt: "Use $design-taste-frontend for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

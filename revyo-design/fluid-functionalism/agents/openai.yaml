@@ -1,0 +1,6 @@
+interface:
+  display_name: "fluid-functionalism"
+  short_description: "Build or polish React UI with @fluid components, or implement cu"
+  default_prompt: "Use $fluid-functionalism for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

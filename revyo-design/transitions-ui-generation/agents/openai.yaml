@@ -1,0 +1,6 @@
+interface:
+  display_name: "transitions-ui-generation"
+  short_description: "Animate UI appearing progressively when designing an AI-generati"
+  default_prompt: "Use $transitions-ui-generation for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

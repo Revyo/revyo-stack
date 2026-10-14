@@ -1,0 +1,6 @@
+interface:
+  display_name: "benchmark-checklist"
+  short_description: "Validate a benchmark’s methodology when measuring or interpretin"
+  default_prompt: "Use $benchmark-checklist for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

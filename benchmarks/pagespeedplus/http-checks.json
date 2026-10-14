@@ -1,0 +1,166 @@
+{
+  "observedAt": "2026-10-14",
+  "kind": "independent anonymous HTTP checks",
+  "origin": "local preview, no public origin configured",
+  "pageResponses": [
+    {
+      "path": "/",
+      "userAgent": "Mozilla/5.0",
+      "status": 200,
+      "title": "Tallypace \u2014 Keep client sites fast",
+      "description": "A new performance monitoring concept for web agencies. Catch regressions, assign fixes, and show clients what improved.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://localhost:3000/share.png",
+      "ogUrl": null,
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    },
+    {
+      "path": "/",
+      "userAgent": "Googlebot",
+      "status": 200,
+      "title": "Tallypace \u2014 Keep client sites fast",
+      "description": "A new performance monitoring concept for web agencies. Catch regressions, assign fixes, and show clients what improved.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://localhost:3000/share.png",
+      "ogUrl": null,
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    },
+    {
+      "path": "/",
+      "userAgent": "Twitterbot/1.0",
+      "status": 200,
+      "title": "Tallypace \u2014 Keep client sites fast",
+      "description": "A new performance monitoring concept for web agencies. Catch regressions, assign fixes, and show clients what improved.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://localhost:3000/share.png",
+      "ogUrl": null,
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    },
+    {
+      "path": "/workflow",
+      "userAgent": "Mozilla/5.0",
+      "status": 200,
+      "title": "Workflow \u2014 Tallypace",
+      "description": "Explore Tallypace\u2019s proposed agency workflow: confirm performance regressions, assign an owner, verify the fix, and report the result to your client.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://localhost:3000/share.png",
+      "ogUrl": "http://localhost:3000/workflow",
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    },
+    {
+      "path": "/workflow",
+      "userAgent": "Googlebot",
+      "status": 200,
+      "title": "Workflow \u2014 Tallypace",
+      "description": "Explore Tallypace\u2019s proposed agency workflow: confirm performance regressions, assign an owner, verify the fix, and report the result to your client.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://localhost:3000/share.png",
+      "ogUrl": "http://localhost:3000/workflow",
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    },
+    {
+      "path": "/workflow",
+      "userAgent": "Twitterbot/1.0",
+      "status": 200,
+      "title": "Workflow \u2014 Tallypace",
+      "description": "Explore Tallypace\u2019s proposed agency workflow: confirm performance regressions, assign an owner, verify the fix, and report the result to your client.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://localhost:3000/share.png",
+      "ogUrl": "http://localhost:3000/workflow",
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    },
+    {
+      "path": "/pricing",
+      "userAgent": "Mozilla/5.0",
+      "status": 200,
+      "title": "Pricing \u2014 Tallypace",
+      "description": "Compare proposed Tallypace Studio and Agency plans, understand scan credits and portfolio limits, and download a local setup brief without signing up.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://localhost:3000/share.png",
+      "ogUrl": "http://localhost:3000/pricing",
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    },
+    {
+      "path": "/pricing",
+      "userAgent": "Googlebot",
+      "status": 200,
+      "title": "Pricing \u2014 Tallypace",
+      "description": "Compare proposed Tallypace Studio and Agency plans, understand scan credits and portfolio limits, and download a local setup brief without signing up.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://localhost:3000/share.png",
+      "ogUrl": "http://localhost:3000/pricing",
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    },
+    {
+      "path": "/pricing",
+      "userAgent": "Twitterbot/1.0",
+      "status": 200,
+      "title": "Pricing \u2014 Tallypace",
+      "description": "Compare proposed Tallypace Studio and Agency plans, understand scan credits and portfolio limits, and download a local setup brief without signing up.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://localhost:3000/share.png",
+      "ogUrl": "http://localhost:3000/pricing",
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    }
+  ],
+  "internalLinksChecked": [
+    "/",
+    "/#approach",
+    "/#main",
+    "/pricing",
+    "/pricing#main",
+    "/pricing#planner",
+    "/pricing#plans",
+    "/product-brief.txt",
+    "/workflow",
+    "/workflow#main",
+    "/workflow#workflow"
+  ],
+  "internalLinkFailures": [],
+  "assets": [
+    {
+      "path": "share.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 52787,
+      "sha256": "bf94fa4d5bcbc6ed1f5c6984a4fa8e9ba096941669818fc5f0c4d7348b3f9a88",
+      "dimensions": [1200, 630]
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 2045,
+      "sha256": "4c858c69baefd7e0fe25e5f15820af3bfee74aa0c48b4c3e2e41af5d4145100f",
+      "dimensions": [180, 180]
+    },
+    {
+      "path": "icon.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bytes": 215,
+      "sha256": "1e298117f1756791453a7d45b69f2fec4684b7ee9c6c6ee72c7437b9070658e6"
+    },
+    {
+      "path": "product-brief.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 9520,
+      "sha256": "befd7e7f0f2a61b29850b29ea47718d851cb8042f44026af896eb1645d00e146"
+    }
+  ],
+  "afterCorrections": true,
+  "limits": [
+    "No public deployment or social-platform cache fetch was tested.",
+    "HTTP checks do not establish rendered mobile layout or client interaction behavior."
+  ]
+}

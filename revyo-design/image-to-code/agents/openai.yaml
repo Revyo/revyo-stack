@@ -1,0 +1,6 @@
+interface:
+  display_name: "image-to-code"
+  short_description: "Generate visual web references and implement them when an image-"
+  default_prompt: "Use $image-to-code for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

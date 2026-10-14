@@ -1,0 +1,6 @@
+interface:
+  display_name: "mobile-native"
+  short_description: "Improve mobile web or PWA behavior when working on touch interac"
+  default_prompt: "Use $mobile-native for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

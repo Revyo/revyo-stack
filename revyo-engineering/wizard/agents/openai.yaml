@@ -1,0 +1,6 @@
+interface:
+  display_name: "wizard"
+  short_description: "Create a human-run setup wizard when credentials, provisioning, "
+  default_prompt: "Use $wizard for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

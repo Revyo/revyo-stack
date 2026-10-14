@@ -1,0 +1,6 @@
+interface:
+  display_name: "setup-benny"
+  short_description: "Configure Benny issue-triage and reproduction workflows when the"
+  default_prompt: "Use $setup-benny for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

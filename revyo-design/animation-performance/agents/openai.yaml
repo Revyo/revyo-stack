@@ -1,0 +1,6 @@
+interface:
+  display_name: "animation-performance"
+  short_description: "Diagnose janky web animation or choose rendering properties and "
+  default_prompt: "Use $animation-performance for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

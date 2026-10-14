@@ -1,0 +1,6 @@
+interface:
+  display_name: "grill-me"
+  short_description: "Sharpen a plan through focused questioning when the user asks to"
+  default_prompt: "Use $grill-me for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true
