@@ -917,8 +917,8 @@
       "source": "marketing-seo",
       "path": "skills/seo-audit",
       "destination": "revyo-seo/seo-audit",
-      "hash": "e5f9922630cd1bbc879f44076a2165b5cc1e09b9e52a2b397316c25bdc97cec6",
-      "revision": "0f8d89961cdf782dd02644b9df3ddc671c21a7f0",
+      "hash": "ae2b11b06dc77dba8cf653116d34245f2b3c0158a13bbf201fd638a115f47d4b",
+      "revision": "76d0257841add7ba51bac6e6f191b3a01b4a9335",
       "mode": "vendor"
     },
     "setup-benny": {
