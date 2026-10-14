@@ -10,6 +10,12 @@ contrast and safe margins to survive small previews/crops. Inspect the final
 raster at full size and card size. Avoid tiny UI, accidental cropping, unreadable
 lettering, and decorative labels unsupported by the brief.
 
+Use the selected brand typeface in the delivered asset. Embed a licensed font or
+outline its glyphs when the renderer would otherwise substitute a fallback; check
+the raster itself, since a font-family declaration does not prove that font rendered.
+Keep regeneration runnable from the checkout with declared dependencies and licensed
+inputs; an absolute import from a maintainer's tool cache is not a portable asset pipeline.
+
 Reuse existing illustration/mascot assets. Generate original raster backgrounds
 when they add useful product-specific meaning. Keep exact brand lettering/logo
 composition deterministic instead of relying on generated text. Retain reusable

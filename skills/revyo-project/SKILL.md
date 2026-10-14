@@ -55,7 +55,10 @@ background, not a prerequisite or a project to clone.
 ## Completion
 
 Continue through implementation, relevant checks, and change-related fixes until
-the requested local result works. Keep commands, required environment, migration
+the requested local result works. Before handoff, run the phase's documented
+behavior checks and fresh-coverage/shared CRAP gate against its generated source;
+build/type checks alone do not establish that quality contract.
+Keep commands, required environment, migration
 steps, and deployment setup documented for the actual targets. Record consequential
 architecture choices when they need a durable explanation.
 

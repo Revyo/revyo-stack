@@ -9,6 +9,8 @@ Use the narrowest relevant skill without waiting for a named invocation:
 
 - Public-facing pages, portfolios, heroes, and marketing sites: start with
   [design-taste-frontend](../design-taste-frontend/SKILL.md).
+- Software product showcases: use [product demonstrations](references/product-showcase.md)
+  to connect the site's art direction to legible product UI and workflows.
 - Product UI and dashboards: [frontend-design](../frontend-design/SKILL.md) for
   visual direction and [emil-design-eng](../emil-design-eng/SKILL.md) for interaction craft.
 - Existing UI improvements: [better-interface](../better-interface/SKILL.md)
