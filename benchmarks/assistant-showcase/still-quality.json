@@ -1,0 +1,77 @@
+{
+  "consumer": "still",
+  "managedSkills": {
+    "filesChecked": 1107,
+    "modified": 0,
+    "catalogDifferences": 0
+  },
+  "sourceDigest": {
+    "apps/web/app/globals.css": "772e8f5e8deaa7379c4b47ffb5c1947a1d7e00867bf1aa56fea09aa8271d1716",
+    "apps/web/app/layout.tsx": "3a414eb99e7d14e1ff882c8cd81a205f8276c0f1f1b31c812e12febbb930181e",
+    "apps/web/app/page.tsx": "e48aef73bf9f01d9e63835fc5c47ab33f2750a7e846ce5b1fa90f2f8cbd3f9c3",
+    "apps/web/components/marks.tsx": "4d2f4084ee95c51a6dfb1245824e51b6ab610def480140c3d1123e3f191671ec",
+    "apps/web/components/showcase.tsx": "75a73cf2e22445dddb98e2b820e9c3c8c9174af9d2a4a503f102613122c68e7d",
+    "apps/web/lib/content.ts": "e86b13d11ca0fb4a8abded96e3e1f79b7a9e9192a722032d3287a47ca509e032",
+    "scripts/create-brand-assets.mjs": "0fbad6f0c8c023f0003b403ce0cf49b0571287339a4390b213a4acb193d5596f"
+  },
+  "lockDigest": "688d03af81bb213183b5d91abe87da4ef05108bf5bab13a7bb4277c93bd0e4d5",
+  "crap": {
+    "passed": true,
+    "sourceFiles": 6,
+    "summary": {
+      "functions": 54,
+      "failing": 0,
+      "maxScore": 7
+    }
+  },
+  "sourceGlobs": {
+    "include": [
+      "apps/web/{app,lib,components}/**/*.{ts,tsx}",
+      "scripts/**/*.mjs"
+    ],
+    "exclude": ["**/*.{test,spec}.{ts,tsx}", "**/*.d.ts"],
+    "coverage": ["apps/web/coverage/coverage-final.json"],
+    "maxScore": 8,
+    "output": "reports/crap.json"
+  },
+  "aggregateCoverage": {
+    "lines": {
+      "total": 115,
+      "covered": 113,
+      "skipped": 0,
+      "pct": 98.26
+    },
+    "statements": {
+      "total": 122,
+      "covered": 119,
+      "skipped": 0,
+      "pct": 97.54
+    },
+    "functions": {
+      "total": 54,
+      "covered": 53,
+      "skipped": 0,
+      "pct": 98.14
+    },
+    "branches": {
+      "total": 90,
+      "covered": 84,
+      "skipped": 0,
+      "pct": 93.33
+    },
+    "branchesTrue": {
+      "total": 0,
+      "covered": 0,
+      "skipped": 0,
+      "pct": "Unknown"
+    }
+  },
+  "initialGuidanceRevision": "463677d6eb154b3907efeb02176f0cd5d94ca650",
+  "finalInstalledGuidanceRevision": "1d9fe2262a083f3494105ae80db3375787f3cd07",
+  "checks": [
+    "12 behavioral/asset tests passed",
+    "TypeScript, production build and gate negative controls passed",
+    "Responsive browser and staged approval journeys passed",
+    "Actual HTTP social assets and managed file integrity independently checked"
+  ]
+}

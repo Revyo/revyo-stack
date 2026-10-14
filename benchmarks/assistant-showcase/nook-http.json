@@ -1,0 +1,73 @@
+{
+  "observedAt": "2026-10-14",
+  "kind": "independent anonymous HTTP checks",
+  "origin": "local preview, no public origin configured",
+  "pageResponses": [
+    {
+      "userAgent": "Mozilla/5.0",
+      "status": 200,
+      "title": "Nook \u2014 A little room for your day",
+      "description": "Meet Nook, a personal assistant concept for the apps you already use. Explore a calmer morning, thoughtful follow-ups, and plans that come together.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://127.0.0.1:3104/og.png",
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    },
+    {
+      "userAgent": "Googlebot",
+      "status": 200,
+      "title": "Nook \u2014 A little room for your day",
+      "description": "Meet Nook, a personal assistant concept for the apps you already use. Explore a calmer morning, thoughtful follow-ups, and plans that come together.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://127.0.0.1:3104/og.png",
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    },
+    {
+      "userAgent": "Twitterbot/1.0",
+      "status": 200,
+      "title": "Nook \u2014 A little room for your day",
+      "description": "Meet Nook, a personal assistant concept for the apps you already use. Explore a calmer morning, thoughtful follow-ups, and plans that come together.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://127.0.0.1:3104/og.png",
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    }
+  ],
+  "internalLinksChecked": [
+    "",
+    "#connections",
+    "#how-it-fits",
+    "#in-action",
+    "#main",
+    "#questions",
+    "#your-say"
+  ],
+  "internalLinkFailures": [],
+  "assets": [
+    {
+      "path": "/og.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 49550,
+      "sha256": "9651a8ca25765943b6a7c8c5569984009df096c903f1ed9f4f890a120b934299",
+      "dimensions": [1200, 630]
+    },
+    {
+      "path": "/apple-touch-icon.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 3519,
+      "sha256": "0f65e38d6b67d16a9109b67f2c64737082d6f015e46b4f73f63528d05894d595",
+      "dimensions": [180, 180]
+    },
+    {
+      "path": "/icon.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bytes": 203,
+      "sha256": "3359b79aaeb40c40d134c5ba37e34a15c09fb0ae8356ad58b2bcc69fb37bb5c3"
+    }
+  ],
+  "limits": ["No public deployment or social-platform cache fetch was tested."]
+}

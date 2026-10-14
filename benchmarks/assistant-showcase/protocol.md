@@ -30,3 +30,15 @@ Inspect whether the new showcase reference is discovered and the proposal joins
 site direction with product UI and meaningful local demo states. This probe tests
 routing/planning only; it is not a second completed implementation or evidence of
 automatic host Plan-mode activation.
+
+## Fresh implementation retry
+
+After the runnable checkpoint exposed the repeated font/quality omissions and the
+nonportable asset import, install correction
+`d5dbb517bcdfafeb0ce7c17d19a6dba89ff5c30c` in another empty repository. Dispatch the
+same original implementation prompt with its new workspace, without the prior
+findings or named skills. Give ordinary owner answers with a local port of 3104.
+Inspect the initial handoff's delivered typography, portable asset generator,
+fresh coverage/shared quality command, product demonstration, and local scope.
+Keep this retry separate from the assisted Still completion and the planning-only
+routing probe.

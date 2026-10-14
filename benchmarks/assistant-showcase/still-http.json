@@ -1,0 +1,73 @@
+{
+  "observedAt": "2026-10-14",
+  "kind": "independent anonymous HTTP checks",
+  "origin": "local preview, no public origin configured",
+  "pageResponses": [
+    {
+      "userAgent": "Mozilla/5.0",
+      "status": 200,
+      "title": "Still \u00b7 Your day, a little lighter",
+      "description": "Meet Still, an original personal assistant concept across the apps you already use. Explore a day of useful briefings, thoughtful drafts, and a little more room.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://localhost:3103/share.png",
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    },
+    {
+      "userAgent": "Googlebot",
+      "status": 200,
+      "title": "Still \u00b7 Your day, a little lighter",
+      "description": "Meet Still, an original personal assistant concept across the apps you already use. Explore a day of useful briefings, thoughtful drafts, and a little more room.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://localhost:3103/share.png",
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    },
+    {
+      "userAgent": "Twitterbot/1.0",
+      "status": 200,
+      "title": "Still \u00b7 Your day, a little lighter",
+      "description": "Meet Still, an original personal assistant concept across the apps you already use. Explore a day of useful briefings, thoughtful drafts, and a little more room.",
+      "robots": "noindex, nofollow",
+      "ogImage": "http://localhost:3103/share.png",
+      "twitterCard": "summary_large_image",
+      "canonical": []
+    }
+  ],
+  "internalLinksChecked": [
+    "",
+    "#how-it-feels",
+    "#main",
+    "#questions",
+    "#what-it-does",
+    "#your-control",
+    "#your-day"
+  ],
+  "internalLinkFailures": [],
+  "assets": [
+    {
+      "path": "/share.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 49795,
+      "sha256": "72243c7bffb5ab116bb65767fd9f9b1e6988a176d6dbb69b96132fef2742a844",
+      "dimensions": [1200, 630]
+    },
+    {
+      "path": "/apple-touch-icon.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 3288,
+      "sha256": "4a2a050d26c76978a33dd78af2a30ba199082fab3cbc7e602b3d78d1e8b79052",
+      "dimensions": [180, 180]
+    },
+    {
+      "path": "/icon.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bytes": 237,
+      "sha256": "3b6db00721b5e47f68840a182ea8d27e7273bc97b2bff0bdbdcb843a337f9796"
+    }
+  ],
+  "limits": ["No public deployment or social-platform cache fetch was tested."]
+}

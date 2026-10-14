@@ -108,9 +108,10 @@ The [PageSpeedPlus trial protocol](benchmarks/pagespeedplus/protocol.md) checks 
 scopes with ordinary prompts that do not name skills or request planning. Its
 [observed results](benchmarks/pagespeedplus/results.md) retain first-pass failures,
 assisted corrections, and the limits of the clean kickoff retest.
-The [assistant-showcase trial](benchmarks/assistant-showcase/protocol.md) exercises
-the corrected catalog on a different product category. Product showcases combine
-Taste's site direction with product-interface craft and coherent local demonstrations.
+The [assistant-showcase protocol](benchmarks/assistant-showcase/protocol.md) and
+[observed results](benchmarks/assistant-showcase/results.md) exercise the corrected
+catalog on a different product category. Product showcases combine Taste's site
+direction with product-interface craft and coherent local demonstrations.
 
 ```text
 Use $revyo-project to set up this repository for a Revyo Software project.
