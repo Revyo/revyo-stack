@@ -13,6 +13,10 @@ lettering, and decorative labels unsupported by the brief.
 Use the selected brand typeface in the delivered asset. Embed a licensed font or
 outline its glyphs when the renderer would otherwise substitute a fallback; check
 the raster itself, since a font-family declaration does not prove that font rendered.
+A `fontfile` argument alone also does not establish that its glyphs were used:
+an installed font with the same family can mask a dependency on system font matching.
+Use an isolated font environment or resolve glyph outlines directly from the bundled
+file when matching is ambiguous.
 Keep regeneration runnable from the checkout with declared dependencies and licensed
 inputs; an absolute import from a maintainer's tool cache is not a portable asset pipeline.
 
