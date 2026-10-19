@@ -1,6 +1,6 @@
+policy:
+  allow_implicit_invocation: true
 interface:
   display_name: "minimalist-ui"
   short_description: "Design restrained editorial interfaces when the brief calls for "
   default_prompt: "Use $minimalist-ui for the relevant part of this task."
-policy:
-  allow_implicit_invocation: true

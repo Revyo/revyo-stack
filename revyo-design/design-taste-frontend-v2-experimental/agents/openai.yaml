@@ -1,6 +1,6 @@
+policy:
+  allow_implicit_invocation: true
 interface:
   display_name: "design-taste-frontend-v2-experimental"
   short_description: "Use the earlier experimental Taste variant when a project requir"
   default_prompt: "Use $design-taste-frontend-v2-experimental for the relevant part of this task."
-policy:
-  allow_implicit_invocation: true

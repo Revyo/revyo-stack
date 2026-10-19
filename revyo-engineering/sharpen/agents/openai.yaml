@@ -1,0 +1,6 @@
+interface:
+  display_name: "sharpen"
+  short_description: "Sharpen a task before starting: the expert approach, what the us"
+  default_prompt: "Use $sharpen for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

@@ -1,6 +1,6 @@
+policy:
+  allow_implicit_invocation: true
 interface:
   display_name: "stitch-design-taste"
   short_description: "Write design-system guidance for Google Stitch when preparing or"
   default_prompt: "Use $stitch-design-taste for the relevant part of this task."
-policy:
-  allow_implicit_invocation: true

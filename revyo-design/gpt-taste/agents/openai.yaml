@@ -1,6 +1,6 @@
+policy:
+  allow_implicit_invocation: true
 interface:
   display_name: "gpt-taste"
   short_description: "Design editorial, conversion-focused web pages with GSAP when th"
   default_prompt: "Use $gpt-taste for the relevant part of this task."
-policy:
-  allow_implicit_invocation: true

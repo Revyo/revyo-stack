@@ -1,11 +1,11 @@
 # Source
 
-Upstream: [leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill/blob/a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9/skills/stitch-skill)
+Upstream: [leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill/blob/b9ca2fd8047f4c72d7da90ebc1c1203e57c72cd2/skills/stitch-skill)
 
-Revision: `a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9`
+Revision: `b9ca2fd8047f4c72d7da90ebc1c1203e57c72cd2`
 
 Mode: vendor. Revyo supplies the concise discovery wrapper and automatic invocation policy.
 Relative links and colliding skill invocations are adapted for the installed layout.
 Domain guidance and supporting files belong to their upstream authors.
 
-License: [upstream terms](https://github.com/leonxlnx/taste-skill/blob/a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9/LICENSE).
+License: [upstream terms](https://github.com/leonxlnx/taste-skill/blob/b9ca2fd8047f4c72d7da90ebc1c1203e57c72cd2/LICENSE).

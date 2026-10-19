@@ -1,11 +1,11 @@
 ---
-name: full-output-enforcement
-description: "Produce complete, unabridged code or documents when the user requests exhaustive output."
+name: maintain-formal-verification-skill
+description: "Bring a project's formal verification back in line with the code after the code changes: find the commits that touched verified code, update the model, harness, or properties to describe the code as it is now, rerun, ..."
 ---
 
-# full-output-enforcement
+# maintain-formal-verification-skill
 
-Produce complete, unabridged code or documents when the user requests exhaustive output.
+Bring a project's formal verification back in line with the code after the code changes: find the commits that touched verified code, update the model, harness, or properties to describe the code as it is now, rerun, ...
 
 Read [UPSTREAM.md](UPSTREAM.md) for the domain guidance and follow only
 its relevant reference links. Treat alternative aesthetic recipes as choices,
