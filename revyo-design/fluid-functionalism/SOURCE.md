@@ -1,11 +1,11 @@
 # Source
 
-Upstream: [mickadesign/fluid-functionalism](https://github.com/mickadesign/fluid-functionalism/blob/3fd7be89abd00f171aa92434c51e18fee43993e4/skills/fluid-functionalism)
+Upstream: [mickadesign/fluid-functionalism](https://github.com/mickadesign/fluid-functionalism/blob/97a77bc48c143b41a0b7854358446fce2837ebbb/skills/fluid-functionalism)
 
-Revision: `3fd7be89abd00f171aa92434c51e18fee43993e4`
+Revision: `97a77bc48c143b41a0b7854358446fce2837ebbb`
 
 Mode: vendor. Revyo supplies the concise discovery wrapper and automatic invocation policy.
 Relative links and colliding skill invocations are adapted for the installed layout.
 Domain guidance and supporting files belong to their upstream authors.
 
-License: [upstream terms](https://github.com/mickadesign/fluid-functionalism/blob/3fd7be89abd00f171aa92434c51e18fee43993e4/LICENSE).
+License: [upstream terms](https://github.com/mickadesign/fluid-functionalism/blob/97a77bc48c143b41a0b7854358446fce2837ebbb/LICENSE).

@@ -7,7 +7,7 @@ description: "Animate UI appearing progressively when designing an AI-generation
 
 Animate UI appearing progressively when designing an AI-generation or streaming-interface effect.
 
-Read the [upstream skill](https://github.com/Jakubantalik/transitions.dev/blob/f63fdc7980bced60281d54439a28aade9d1067bb/skills/transitions-ui-generation/SKILL.md)
+Read the [upstream skill](https://github.com/Jakubantalik/transitions.dev/blob/6a7d68260d624eb66661cc3af17e0989476f48ae/skills/transitions-ui-generation/SKILL.md)
 and fetch only the recipes needed for the current interaction from that directory.
 This adapter does not redistribute the Transitions.dev library. The free skills
 need no paid plan; use Pro material only when the user already has access.

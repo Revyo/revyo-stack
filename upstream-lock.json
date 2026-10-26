@@ -5,8 +5,8 @@
       "source": "marketing-seo",
       "path": "skills/ai-seo",
       "destination": "revyo-seo/ai-seo",
-      "hash": "6db3ba3f782059b54f17b2b24e64fc60f4377f961a71fcd21876a329225b94d8",
-      "revision": "0f8d89961cdf782dd02644b9df3ddc671c21a7f0",
+      "hash": "fb897bb3f363ccf5a52608119f7c50b6827c5839d942a4fd6f43bc8d11e74df7",
+      "revision": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
       "mode": "vendor"
     },
     "animate": {
@@ -61,8 +61,8 @@
       "source": "poteto",
       "path": "pstack/skills/arena",
       "destination": "revyo-engineering/arena",
-      "hash": "76e8fc37b4524af836833ed31bd3bd638ad463192d9df5c8b6f556959e8c585c",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "4e35a7722cf3e42041bd6ddeced48808626e62702c59e4588c0f17eadc019dc6",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "ask-matt": {
@@ -85,8 +85,8 @@
       "source": "poteto",
       "path": "pstack/skills/automate-me",
       "destination": "revyo-engineering/automate-me",
-      "hash": "1712758bd7cdfeb50a95b1109c7ad43919ad55d460191569a48a060a2a606b98",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "7c699b8207e621ea919fe24ef63dd29e77564b834faffe29d5c87c1d44fa3590",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "benchmark-checklist": {
@@ -101,56 +101,56 @@
       "source": "jakub",
       "path": "skills/better-accessibility",
       "destination": "revyo-design/better-accessibility",
-      "hash": "8ceb9355587bcb3bf4b9d2e85bc2a188e470ba7e686ea2125e0befcdc92444f6",
-      "revision": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "hash": "033ea4d9def6fd1fc83a6f9cb5633cb49841cc08ce6fa78983b4e972184a8ff8",
+      "revision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
       "mode": "vendor"
     },
     "better-colors": {
       "source": "jakub",
       "path": "skills/better-colors",
       "destination": "revyo-design/better-colors",
-      "hash": "9f85b4020c7585734e31021f380677ec77655ca77eedac4deb64a7003c9f7f08",
-      "revision": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "hash": "82acb7b69f57883287fe6e8e097a7a74b15a6f71f91314bcdd0ed71204f204c3",
+      "revision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
       "mode": "vendor"
     },
     "better-interface": {
       "source": "jakub",
       "path": "skills/better-interface",
       "destination": "revyo-design/better-interface",
-      "hash": "f3593dece877bf6b9943bdf72734113971302870d49875db08508e3dad74dabe",
-      "revision": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "hash": "5556c406ff60f7f7f8039d637d053073b0c924ed22e072c0f81f1400540175b0",
+      "revision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
       "mode": "vendor"
     },
     "better-layout": {
       "source": "jakub",
       "path": "skills/better-layout",
       "destination": "revyo-design/better-layout",
-      "hash": "e6dd24d75b566ad78ca4cf0ca5d1e8e32cacd588e1ba83ea662c7fa232d83349",
-      "revision": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "hash": "b7102804672e7611435964107597ec64a72fc0f8c6fb3d6e78ad03f8011a3214",
+      "revision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
       "mode": "vendor"
     },
     "better-typography": {
       "source": "jakub",
       "path": "skills/better-typography",
       "destination": "revyo-design/better-typography",
-      "hash": "71e365603ba9d86157f7ee02f3b23843645f9c6f64cb8611643fcc9b16493cd7",
-      "revision": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "hash": "2ca60bbec74a3a32c02cffff89ab36dee93832355669f464d34efc4271b0b322",
+      "revision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
       "mode": "vendor"
     },
     "better-ui": {
       "source": "jakub",
       "path": "skills/better-ui",
       "destination": "revyo-design/better-ui",
-      "hash": "3efe90c002b5e9575f89827785d2c64d12369aa82f9c5c6855f5b0d5240ab9e4",
-      "revision": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "hash": "4e5722a3448f10e42e803a84b5185bfdf7203973d509c1a1944c63543be6d303",
+      "revision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
       "mode": "vendor"
     },
     "better-writing": {
       "source": "jakub",
       "path": "skills/better-writing",
       "destination": "revyo-design/better-writing",
-      "hash": "e791c2fb7e7790c74cd77ead10933e602ce8bbdb450e4e325dffd1839b5967f6",
-      "revision": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "hash": "7f1085f48aaf3ed41881834e1afb187de8975e05463fbc1495b5a0a43e1acb07",
+      "revision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
       "mode": "vendor"
     },
     "blast-radius": {
@@ -161,20 +161,12 @@
       "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
       "mode": "vendor"
     },
-    "brandkit": {
-      "source": "taste",
-      "path": "skills/brandkit",
-      "destination": "revyo-design/brandkit",
-      "hash": "77718a199ff496f8193006d1c09e707e8bf24f032bf64321c77b4c7d05a2c60c",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
-      "mode": "vendor"
-    },
     "break": {
       "source": "jakub",
       "path": "skills/break",
       "destination": "revyo-design/break",
-      "hash": "f066c69db70a1ecad21fd69ce0ca6b6200adbd2739577409749b9f096d15e447",
-      "revision": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "hash": "f2b88f0b65d6cfe2a0eadf1a9c9f5f79a15dd5af40a1a886135c300d26b6fb83",
+      "revision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
       "mode": "vendor"
     },
     "break-ui": {
@@ -197,8 +189,8 @@
       "source": "jakub",
       "path": "skills/build-design",
       "destination": "revyo-design/build-design",
-      "hash": "cbbdeb1ec26b0686a7d01825d8864535c1afbd1a90caa84ecbd792f561c843ee",
-      "revision": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "hash": "3f444319ce3838a3fd5882a8c7f52d210bc27df95c950f8569869810b467767e",
+      "revision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
       "mode": "vendor"
     },
     "building-components": {
@@ -213,8 +205,8 @@
       "source": "matt",
       "path": "skills/in-progress/chief-of-staff",
       "destination": "revyo-engineering/chief-of-staff",
-      "hash": "3771050831efcd393f16a2edceed97bd1809de620cc19f008b81f12f8ccf6ca9",
-      "revision": "49dd158d1076134a641b33efb035946536778336",
+      "hash": "d842c918d109d07d593da7d9c14634d0ef13fb9e35e9aa20b1bd73fd94d31493",
+      "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
       "mode": "vendor"
     },
     "claude-handoff": {
@@ -245,8 +237,16 @@
       "source": "poteto",
       "path": "pstack/skills/correct",
       "destination": "revyo-engineering/correct",
-      "hash": "c7ebb4149cd66bbd946728a651b9dede119731cad4b9c54120a7f5f9922db1ee",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "bc8a0c566fd4ba05ab1d2d07d6bac6e5f8783fd79db67b8ed905271ccac70bd8",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
+      "mode": "vendor"
+    },
+    "create-formal-verification-skill": {
+      "source": "poteto",
+      "path": "pstack/skills/create-formal-verification-skill",
+      "destination": "revyo-engineering/create-formal-verification-skill",
+      "hash": "e86508dfdbb32641de3a57325660dc0830c9a733bb7362d27d47a574fe8d4ad1",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "create-verification-skill": {
@@ -269,24 +269,8 @@
       "source": "taste",
       "path": "skills/taste-skill",
       "destination": "revyo-design/design-taste-frontend",
-      "hash": "b6ea17f78b3cf4f9d38810f7b58928bd7ea15a9ed1cecd7ded40a4bc01093047",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
-      "mode": "vendor"
-    },
-    "design-taste-frontend-v1": {
-      "source": "taste",
-      "path": "skills/taste-skill-v1",
-      "destination": "revyo-design/design-taste-frontend-v1",
-      "hash": "7d0a4ce3e380206683871cd37890ac0e9060c569d7b31773d335e773731ba2f1",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
-      "mode": "vendor"
-    },
-    "design-taste-frontend-v2-experimental": {
-      "source": "taste",
-      "path": "skills/taste-skill-v2-experimental",
-      "destination": "revyo-design/design-taste-frontend-v2-experimental",
-      "hash": "806ef8b2981b429644abaf73067b8038206d72ae3f5a2d047824c296709e9188",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
+      "hash": "e83e0b60d56fe677a1365eb4e0a113555586c0e84446367abc370638321dcbf4",
+      "revision": "12af471f627f866411b4bd785b19646d3672784c",
       "mode": "vendor"
     },
     "diagnosing-bugs": {
@@ -325,8 +309,8 @@
       "source": "poteto",
       "path": "pstack/skills/figure-it-out",
       "destination": "revyo-engineering/figure-it-out",
-      "hash": "c60951c2d2f5bfb60a07e6de8865b3305bfcf3529531457d770eae09eb9ae713",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "089f782817c0834ff2cfebd9e9b897eda636d00dcea876d8bd85c562cbd8e9d5",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "find-animation-opportunities": {
@@ -341,8 +325,8 @@
       "source": "fluid",
       "path": "skills/fluid-functionalism",
       "destination": "revyo-design/fluid-functionalism",
-      "hash": "6ba10396c8f7d290f91f9bacb63ccda384aab5314a1a8441839e437caff675e7",
-      "revision": "3fd7be89abd00f171aa92434c51e18fee43993e4",
+      "hash": "7dd38fb6b64c6d3c13077e9a28f3af00384187fa1e5a84a2f8269a988c7a02a0",
+      "revision": "97a77bc48c143b41a0b7854358446fce2837ebbb",
       "mode": "vendor"
     },
     "frontend-design": {
@@ -353,28 +337,12 @@
       "revision": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
       "mode": "vendor"
     },
-    "full-output-enforcement": {
-      "source": "taste",
-      "path": "skills/output-skill",
-      "destination": "revyo-design/full-output-enforcement",
-      "hash": "63cbc52835ec82abe9ed20d32e7e6f7482df66e96dc74285b89d60e1a7b73a3a",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
-      "mode": "vendor"
-    },
     "git-guardrails-claude-code": {
       "source": "matt",
       "path": "skills/misc/git-guardrails-claude-code",
       "destination": "revyo-engineering/git-guardrails-claude-code",
       "hash": "f043db2bfe591cdb66e863f5da05c22eeace588c959cccdf1d632ba0863dd24c",
       "revision": "49dd158d1076134a641b33efb035946536778336",
-      "mode": "vendor"
-    },
-    "gpt-taste": {
-      "source": "taste",
-      "path": "skills/gpt-tasteskill",
-      "destination": "revyo-design/gpt-taste",
-      "hash": "32e269aee2949bbf81778e1fa65ea39a74fe54fc846deadd4a637b28906aecf7",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
       "mode": "vendor"
     },
     "grill-me": {
@@ -409,44 +377,12 @@
       "revision": "49dd158d1076134a641b33efb035946536778336",
       "mode": "vendor"
     },
-    "high-end-visual-design": {
-      "source": "taste",
-      "path": "skills/soft-skill",
-      "destination": "revyo-design/high-end-visual-design",
-      "hash": "3787ad47368fd8fcd7db0597eaa4e169586fe7962184fc88dbcaeda0a341ee66",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
-      "mode": "vendor"
-    },
     "how": {
       "source": "poteto",
       "path": "pstack/skills/how",
       "destination": "revyo-engineering/how",
-      "hash": "5e7a9b74199cc5d91f2313e3b2fdc0a71c4ba5326fc75fc77a34560135ff392b",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
-      "mode": "vendor"
-    },
-    "image-to-code": {
-      "source": "taste",
-      "path": "skills/image-to-code-skill",
-      "destination": "revyo-design/image-to-code",
-      "hash": "34e0cc5ba29c136a998d65f63d02c48739525f1b36226c1bcd42716fdbf8de42",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
-      "mode": "vendor"
-    },
-    "imagegen-frontend-mobile": {
-      "source": "taste",
-      "path": "skills/imagegen-frontend-mobile",
-      "destination": "revyo-design/imagegen-frontend-mobile",
-      "hash": "0c280394019f9acc8771d85d0dd9ddd2baa1d2a134ef8e699124f81aa83912f4",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
-      "mode": "vendor"
-    },
-    "imagegen-frontend-web": {
-      "source": "taste",
-      "path": "skills/imagegen-frontend-web",
-      "destination": "revyo-design/imagegen-frontend-web",
-      "hash": "0856f670b5c8c8e782d31125ee5462cec3b7ec79a6c0ff00fd2f48295316fc53",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
+      "hash": "5130f3d57da90a06d3bbf902429fedd4470cc31645b8f2cf2c84a62474f9f81a",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "implement": {
@@ -489,28 +425,20 @@
       "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
       "mode": "vendor"
     },
-    "industrial-brutalist-ui": {
-      "source": "taste",
-      "path": "skills/brutalist-skill",
-      "destination": "revyo-design/industrial-brutalist-ui",
-      "hash": "ca0f66a14707c1f7c6eb9b75e3ce88102d97aa440677c4506134fc5f07a1b6b4",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
-      "mode": "vendor"
-    },
     "interface-review": {
       "source": "jakub",
       "path": "skills/interface-review",
       "destination": "revyo-design/interface-review",
-      "hash": "23305ebbac6e59c1413b96508ce06496cc7173ab7bb62122980f34500a5232c0",
-      "revision": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "hash": "e715b06c994c0bcebf03e319d9f13c58d4fc8c2ff1786c791c1919515d5fdf5d",
+      "revision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
       "mode": "vendor"
     },
     "interrogate": {
       "source": "poteto",
       "path": "pstack/skills/interrogate",
       "destination": "revyo-engineering/interrogate",
-      "hash": "5d98b1f43bc04b0fd0e6ab36baf43672aedb2d7fcb26dd793675d82ca5cdf7d4",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "1cc7d943931ba8b53dca0d3bca4011a70fda2c7480ac00284c0b4a2c3ca704e9",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "is-agentic": {
@@ -525,8 +453,16 @@
       "source": "poteto",
       "path": "pstack/skills/ketchup",
       "destination": "revyo-engineering/ketchup",
-      "hash": "033e8fac1744ac2bdb1317074dcbbb0e5dc91dd4ab060a97ff1fd9e7fdbadb33",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "c4c378284702f3e141c81e349613ad702f600c1fb8183f19b9187e5642373266",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
+      "mode": "vendor"
+    },
+    "ketchup-video": {
+      "source": "poteto",
+      "path": "pstack/skills/ketchup-video",
+      "destination": "revyo-engineering/ketchup-video",
+      "hash": "4babb0a06286d4a4fc22fb3ef5fc51a7ff69dd9af012af0ca27ce3dd3a16c1c8",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "loop-me": {
@@ -535,6 +471,14 @@
       "destination": "revyo-engineering/loop-me",
       "hash": "8abfa1ffe033b90ce8008e13af6c22dc2305e616f19e2612a805f8da737906cb",
       "revision": "49dd158d1076134a641b33efb035946536778336",
+      "mode": "vendor"
+    },
+    "maintain-formal-verification-skill": {
+      "source": "poteto",
+      "path": "pstack/skills/maintain-formal-verification-skill",
+      "destination": "revyo-engineering/maintain-formal-verification-skill",
+      "hash": "4045adf6bfbb1177e0b1bd85966a1a11d6f640293bb2b94bb6db2075826c33dc",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "maintain-verification-skill": {
@@ -549,8 +493,8 @@
       "source": "poteto",
       "path": "pstack/skills/make-bot-ui",
       "destination": "revyo-engineering/make-bot-ui",
-      "hash": "033b9bbed4028beb5a6fac5afa77f4f023b15fcb97feaec67ceab4d3d2cfc678",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "36644e03f298f0cd5383990fa4247cf5ee4cb4d3b129ba44a6bd1f0c36fbfb6b",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "matt-prototype": {
@@ -585,14 +529,6 @@
       "revision": "49dd158d1076134a641b33efb035946536778336",
       "mode": "vendor"
     },
-    "minimalist-ui": {
-      "source": "taste",
-      "path": "skills/minimalist-skill",
-      "destination": "revyo-design/minimalist-ui",
-      "hash": "92f8a443432c8a2db75e91ed30dd7485fb616e1eaf6c86fe9df1946e1a1e5877",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
-      "mode": "vendor"
-    },
     "mobile-native": {
       "source": "emil",
       "path": "skills/mobile-native",
@@ -605,8 +541,8 @@
       "source": "poteto",
       "path": "pstack/skills/no-comments",
       "destination": "revyo-engineering/no-comments",
-      "hash": "8b1e8b55e2433a0b27b4c199d38c8fc5e131934f11455ac8d718a578ee842bb2",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "0ddbf83ea006b7c7b69c31020b76eba73e21f370000e7a5ebd463e4f9b6208e2",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "pick-ui-library": {
@@ -621,16 +557,16 @@
       "source": "poteto",
       "path": "pstack/skills/poteto-help",
       "destination": "revyo-engineering/poteto-help",
-      "hash": "8ecf94be4c9139721acdb46799e56dca02615383fd585fd32ceea12c96266262",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "207d350e771bd072e0e9510a7b49ff5e946510c49cee6d3335fb4688ea54d1b1",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "poteto-mode": {
       "source": "poteto",
       "path": "pstack/skills/poteto-mode",
       "destination": "revyo-engineering/poteto-mode",
-      "hash": "08fe7fd1e3ced2f7cc1675dc8428e785363c714d3577925276367bb025937e68",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "71a9ac9f3a95c1a2d8448d4e25d6c5f6ed6568f0623cf1cff7f543e7c0509d65",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "pr": {
@@ -645,8 +581,8 @@
       "source": "poteto",
       "path": "pstack/skills/principle-attack-the-premise",
       "destination": "revyo-engineering/principle-attack-the-premise",
-      "hash": "8580a56c91f7ef22be278289873c07a823de9b54b372537675354e2433871dfc",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "a6d53621af7cde70361f9c542837a737159db76a03173f049cc38d7ce7a61b64",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "principle-boundary-discipline": {
@@ -701,8 +637,8 @@
       "source": "poteto",
       "path": "pstack/skills/principle-fix-root-causes",
       "destination": "revyo-engineering/principle-fix-root-causes",
-      "hash": "0752ea7dc2706693d48e01c6276597c41589b84fc13cd407f7413a9cc595ffc5",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "0c2ea7517129b522cae543891ae64919ebf556d572c084489db320af1e54f715",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "principle-foundational-thinking": {
@@ -733,16 +669,16 @@
       "source": "poteto",
       "path": "pstack/skills/principle-make-operations-idempotent",
       "destination": "revyo-engineering/principle-make-operations-idempotent",
-      "hash": "5d643d01272ea9b355fc2138aff2d102d9f8029c5df7f6c1a7e433c7834c703d",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "130b2e6fffc09ded5e8d87c46208dc4f8b0e55bb59fdd2406ed52c177b7f5653",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "principle-migrate-callers-then-delete-legacy-apis": {
       "source": "poteto",
       "path": "pstack/skills/principle-migrate-callers-then-delete-legacy-apis",
       "destination": "revyo-engineering/principle-migrate-callers-then-delete-legacy-apis",
-      "hash": "494df9b50357cd66bee7b19990b25d3d4be00808822e549e56f11c9bea98dae8",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "47c29f9804cf0f03a493ebe22a99e137f6ebce8a6e419d78b5dea9d50bd3b033",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "principle-minimize-reader-load": {
@@ -821,16 +757,16 @@
       "source": "poteto",
       "path": "pstack/skills/principle-test-behavior-not-implementation",
       "destination": "revyo-engineering/principle-test-behavior-not-implementation",
-      "hash": "b773efdb5d3f9feba3935450bfe9fd10a91988e0d337e6a6f93440ee20632df1",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "1f0535788677339e7c7e9842efb1c749f9411173c49c6fd5348b98a20073f563",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "principle-type-system-discipline": {
       "source": "poteto",
       "path": "pstack/skills/principle-type-system-discipline",
       "destination": "revyo-engineering/principle-type-system-discipline",
-      "hash": "e0f08bbeebd579dce92f5b190a53f28bc1a1887fdcca10fe68ac5279c6e18b0d",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "db0bf0c9bd6cefea1186bc82b6bc08c49378e407c74a3faa23cc8b9e1b080abb",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "programmatic-seo": {
@@ -853,24 +789,16 @@
       "source": "poteto",
       "path": "pstack/skills/recall",
       "destination": "revyo-engineering/recall",
-      "hash": "24662cd23897ee0f1149adae03fb462f9d7a05b32dbd0b31795d05fde6173018",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
-      "mode": "vendor"
-    },
-    "redesign-existing-projects": {
-      "source": "taste",
-      "path": "skills/redesign-skill",
-      "destination": "revyo-design/redesign-existing-projects",
-      "hash": "55c0fa3ba2eac3df0d9e1110882afc55920176d51893dd5603c482e577d3e1f4",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
+      "hash": "69a9e6ca2747f5f543358b4219458a89fb52f3d3033b2a29623fe3e5e9e2c637",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "reflect": {
       "source": "poteto",
       "path": "pstack/skills/reflect",
       "destination": "revyo-engineering/reflect",
-      "hash": "9a9f2262c731978264d95f828a4071ce9aa73404e253f8d8fc694612a632b0b1",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "81772681ed38069f5791f9da0384ab886b9f89ed08f5b17ef9914bafc59cd50d",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "reproduce-and-fix-issues": {
@@ -917,8 +845,8 @@
       "source": "marketing-seo",
       "path": "skills/seo-audit",
       "destination": "revyo-seo/seo-audit",
-      "hash": "e5f9922630cd1bbc879f44076a2165b5cc1e09b9e52a2b397316c25bdc97cec6",
-      "revision": "0f8d89961cdf782dd02644b9df3ddc671c21a7f0",
+      "hash": "87444409a1dd649d4a6258027688dec17a9ee3a9a1465d8fedb7f0e562ef481e",
+      "revision": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
       "mode": "vendor"
     },
     "setup-benny": {
@@ -949,8 +877,8 @@
       "source": "poteto",
       "path": "pstack/skills/setup-pstack",
       "destination": "revyo-engineering/setup-pstack",
-      "hash": "653506d8cc4f2bddbb4af71139ceed0416f25278648b8e9dd4d9af94018b9d2a",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "4063ec38f4c5c4c8f8462f7aebe9100ee94a1461d16bc3fdc8f127243d1c49b5",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "setup-ts-deep-modules": {
@@ -961,36 +889,44 @@
       "revision": "49dd158d1076134a641b33efb035946536778336",
       "mode": "vendor"
     },
+    "sharpen": {
+      "source": "poteto",
+      "path": "pstack/skills/sharpen",
+      "destination": "revyo-engineering/sharpen",
+      "hash": "4057f2fdbdb7d2c1b28926ad609970f0698f18de17f0eebf6053c3bc3bb83122",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
+      "mode": "vendor"
+    },
     "show-me-your-work": {
       "source": "poteto",
       "path": "pstack/skills/show-me-your-work",
       "destination": "revyo-engineering/show-me-your-work",
-      "hash": "f7c0481bb34d5a12c11cb9233dcb23fd52deff91bcbdababda3661de4941bb96",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "cd5bf2a522c69391c148fd560c8733e23d44b1ff83d7c77444513b9a807b027a",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "state-machine": {
       "source": "jakub",
       "path": "skills/state-machine",
       "destination": "revyo-design/state-machine",
-      "hash": "b2d2765abb8ddeb56f768ad6f9c22de3e795dcfbaca5b33c6b0ebf053fc0b011",
-      "revision": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "hash": "8868d2b80c45b94138e8a0bd43b52d4b78a8cdd73a8bafc0e7f67c2cd1306f20",
+      "revision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
       "mode": "vendor"
     },
-    "stitch-design-taste": {
-      "source": "taste",
-      "path": "skills/stitch-skill",
-      "destination": "revyo-design/stitch-design-taste",
-      "hash": "7edbfb6d8e3c58d18793fe9b5705d6c7ba199cb5aa3daf8193e2663e0b7522af",
-      "revision": "a60a36dc2bb3bb77ccf17f2f62041f5ca8a458b9",
+    "statechart": {
+      "source": "poteto",
+      "path": "pstack/skills/statechart",
+      "destination": "revyo-engineering/statechart",
+      "hash": "2a9d1f82297a6243816530492dd047227911defaa34f1e0436bbd1c433df2046",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "swarm": {
       "source": "poteto",
       "path": "pstack/skills/swarm",
       "destination": "revyo-engineering/swarm",
-      "hash": "82d2b7b86b6e4e10037a48dd2354009ea24e0d4d9d44d7425ccdce3ae69960cb",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "169b0ff6949100a3d32970711ed29b24545070584e2e8273e6100a8aeed8c8ba",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "swiftui-expert-skill": {
@@ -1025,12 +961,12 @@
       "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
       "mode": "vendor"
     },
-    "technical-drawing": {
+    "teardown": {
       "source": "jakub",
-      "path": "skills/technical-drawing",
-      "destination": "revyo-design/technical-drawing",
-      "hash": "ee63ea7330439e50a7be8c8bf251e21ecdf8862d8ed493a88207502203811c72",
-      "revision": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "path": "skills/teardown",
+      "destination": "revyo-design/teardown",
+      "hash": "e3f897fbae561272b12d03fc3afc3b883bcfccc07acd9097d29f1f8e00000ddb",
+      "revision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
       "mode": "vendor"
     },
     "technical-writing": {
@@ -1085,8 +1021,8 @@
       "source": "transitions",
       "path": "skills/transitions-ui-generation",
       "destination": "revyo-design/transitions-ui-generation",
-      "hash": "96a0febeccc18496a1589a6471cb8b9de1f463b4545c30b7960a9636fb1d0005",
-      "revision": "f63fdc7980bced60281d54439a28aade9d1067bb",
+      "hash": "7b7905eee71b52ab0b9fd32f2a6f2cc7df3e896fe9aee3cb72540312adee8c67",
+      "revision": "6a7d68260d624eb66661cc3af17e0989476f48ae",
       "mode": "remote"
     },
     "triage": {
@@ -1109,8 +1045,8 @@
       "source": "poteto",
       "path": "pstack/skills/typescript-best-practices",
       "destination": "revyo-engineering/typescript-best-practices",
-      "hash": "0c8ffc9d25d6426cd5fbc668759ac047665315e756a42cd1c86e7d62c2c10e4a",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "2df90e286628ae5365831029aa7dfea2eb4432a23bfcaccf444e04ede34a5769",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "unslop": {
@@ -1125,8 +1061,8 @@
       "source": "jakub",
       "path": "skills/variant",
       "destination": "revyo-design/variant",
-      "hash": "a68d742b21244ff59b9fcb53e95a611e524cee7e52a130df83b5f7acc7d49889",
-      "revision": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "hash": "2503ac623b32543b55c2d6f2ec36002c9d132d66c58b3a4146375be192dea336",
+      "revision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
       "mode": "vendor"
     },
     "wait-what": {
@@ -1157,8 +1093,8 @@
       "source": "poteto",
       "path": "pstack/skills/why",
       "destination": "revyo-engineering/why",
-      "hash": "d8dcd7007e124b286efa0c2ce484eca9f905914a59d539fcad295317fad72f93",
-      "revision": "c86f349b102feb91f1966f8a6a60882a4e601b50",
+      "hash": "aba724b61b1d9062efa43ded38a8d9d9d150ffb96f40dd44467d45c4454dee61",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
       "mode": "vendor"
     },
     "wizard": {

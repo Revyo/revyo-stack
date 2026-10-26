@@ -1,6 +1,0 @@
-interface:
-  display_name: "technical-drawing"
-  short_description: "Create precise views of a physical object when the requested del"
-  default_prompt: "Use $technical-drawing for the relevant part of this task."
-policy:
-  allow_implicit_invocation: true
