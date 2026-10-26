@@ -1,0 +1,6 @@
+interface:
+  display_name: "teardown"
+  short_description: "Creates technical illustrations of physical objects and of how t"
+  default_prompt: "Use $teardown for the relevant part of this task."
+policy:
+  allow_implicit_invocation: true

@@ -1,6 +1,0 @@
-interface:
-  display_name: "imagegen-frontend-web"
-  short_description: "Generate web design reference images when the task calls for vis"
-  default_prompt: "Use $imagegen-frontend-web for the relevant part of this task."
-policy:
-  allow_implicit_invocation: true
